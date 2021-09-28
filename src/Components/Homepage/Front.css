@@ -59,7 +59,7 @@
   background-image: linear-gradient(
     to right,
     #ffd05c 0%,
-    #CCA649 51%,
+    #cca649 51%,
     #ffd05c 100%
   );
   background-size: 200% auto;
@@ -90,10 +90,11 @@
   font-style: normal;
   font-weight: bold;
   color: #ffffff;
-  font-size: max(1.5vw, 15px);
+  font-size: max(1vw, 15px);
 }
 
 .scroll {
   margin-top: 0;
+  font-size: max(1.5vw, 25px);
   margin-bottom: 10px;
 }

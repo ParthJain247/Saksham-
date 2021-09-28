@@ -164,8 +164,8 @@ figure.effect-julia:hover p {
     margin-left: 0;
   }
   .grid {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     display: grid;
     grid-template-rows: 40vh 40vh 40vh;
     grid-template-columns: 1fr;
