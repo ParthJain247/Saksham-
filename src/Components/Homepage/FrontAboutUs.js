@@ -29,7 +29,7 @@ function FrontAboutUs() {
                     <h3>Volunteer</h3>
                 </div>
             </div>
-            <hr />
+            <hr className="breakline"/>
         </div>
     )
 }

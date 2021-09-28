@@ -12,7 +12,7 @@
   margin-top: 0;
   display: block;
   font-family: Roboto;
-  padding-top: 10vh;
+  padding-top: 5vh;
   margin-left: 10vh;
   margin-right: 10vh;
   margin-bottom: 10vh;
@@ -170,4 +170,51 @@ figure.effect-julia:hover p {
     grid-template-rows: 40vh 40vh 40vh;
     grid-template-columns: 1fr;
   }
+}
+/* 
+.FrontCampaign-btn {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: max(3vw, 30px);
+  background-color: #454360;
+  border-radius: 5%;
+  margin: auto;
+  width: max-content;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+
+.FrontCampaign-btn:hover {
+  color: white;
+} */
+
+.FrontCampaign-btn {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to right,
+    #f97b8b 0%,
+    #c5616e 51%,
+    #f97b8b 100%
+  );
+  margin: auto;
+  display: block;
+  width: max-content;
+  margin-bottom: 5vh;
+  margin-top: 10vh;
+}
+
+.FrontCampaign-btn:hover {
+  color: white;
+  background-position: right center;
 }

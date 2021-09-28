@@ -13,11 +13,13 @@
   height: 100vh;
 }
 
-.AboutUs > hr {
-  height: 3px;
+.breakline {
+  height: 5px;
   color: #454360;
   width: 30%;
   margin: auto;
+  margin-top: auto;
+  margin-bottom: 5vh;
 }
 .Aboutus-title {
   margin-top: 8vh;

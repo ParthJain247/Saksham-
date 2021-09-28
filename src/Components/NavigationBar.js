@@ -6,11 +6,8 @@ import { SiHackhands } from 'react-icons/si';
 import { SiCampaignmonitor } from 'react-icons/si';
 import { RiTeamFill } from 'react-icons/ri';
 import { RiContactsFill } from 'react-icons/ri';
-import HomeIcon from "@material-ui/icons/Home";
-import ReceiptIcon from "@material-ui/icons/Receipt";
-import NotificationsIcon from "@material-ui/icons/Notifications";
-import DesktopWindowsIcon from "@material-ui/icons/DesktopWindows";
-import SettingsIcon from "@material-ui/icons/Settings";
+import { BiNews } from 'react-icons/bi';
+import { BsCardImage } from 'react-icons/bs';
 import Sidebar from './Nav/Nav'
 
 function onClick(e, item) {
@@ -18,12 +15,12 @@ function onClick(e, item) {
 }
 
 const items = [
-    { name: "home", label: "Home", Icon: HomeIcon },
+    { name: "home", label: "Home", Icon: AiFillHome },
     "divider",
     {
         name: "About-us",
         label: "About Us",
-        Icon: ReceiptIcon,
+        Icon: FaUserAlt,
         items: [
         { name: "statements", label: "Statements", onClick },
         { name: "reports", label: "Reports", onClick }
@@ -33,7 +30,7 @@ const items = [
     {
         name: "Our-works",
         label: "Our works",
-        Icon: SettingsIcon,
+        Icon: SiHackhands,
         items: [
         { name: "profile", label: "Profile" },
         { name: "insurance", label: "Insurance", onClick },
@@ -43,21 +40,21 @@ const items = [
     {
         name: "Campaigns",
         label: "Campaigns",
-        Icon: SettingsIcon,
+        Icon: SiCampaignmonitor,
         items: [
         { name: "profile", label: "Profile" },
         { name: "insurance", label: "Insurance", onClick },
         ]
     },
     "divider",
-    { name: "Happenings", label: "Happenings", Icon: HomeIcon },
+    { name: "Happenings", label: "Happenings", Icon: BiNews },
     "divider",
-    { name: "Gallary", label: "Media Center", Icon: HomeIcon },
+    { name: "Gallary", label: "Media Center", Icon: BsCardImage },
     "divider",
     { 
         name: "Join-us", 
         label: "Get Involved", 
-        Icon: HomeIcon ,
+        Icon: RiTeamFill ,
         items: [
             { name: "individual", label: "Individual" },
             { name: "Corporate", label: "Corporate Partnership", onClick },
@@ -68,7 +65,8 @@ const items = [
         ]
     },
     "divider",
-    { name: "Contact", label: "Contact Us", Icon: HomeIcon },
+    { name: "Contact", label: "Contact Us", Icon: RiContactsFill },
+    "divider"
 ];
 
 function NavigationBar() {
@@ -76,12 +74,6 @@ function NavigationBar() {
         <div className="NavigationBar">
             <img src="/images/logo-white.png" alt="Logo" />
             <div className="list-links"> 
-                {/* <a><AiFillHome className="Nav-logo" /><h2>Home</h2></a>
-                <a><FaUserAlt className="Nav-logo" /><h2>About Us</h2></a>
-                <a><SiHackhands className="Nav-logo" /><h2>Our works</h2></a>
-                <a><SiCampaignmonitor className="Nav-logo" /><h2>Campaigns</h2></a>
-                <a><RiTeamFill className="Nav-logo" /><h2>Join Together</h2></a>
-                <a><RiContactsFill className="Nav-logo" /><h2>Contact Us</h2></a> */}
                 <Sidebar items={items} />
             </div>
             <h1>© Saksham A Helping Hand Foundation.</h1>

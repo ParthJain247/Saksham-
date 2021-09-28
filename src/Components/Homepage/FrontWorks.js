@@ -27,6 +27,7 @@ function FrontWorks() {
                     <p>We helped many women to be independent and help them in social upliftment.</p>
                 </div>
             </div>
+            <hr className="breakline"/>
         </div>
     )
 }

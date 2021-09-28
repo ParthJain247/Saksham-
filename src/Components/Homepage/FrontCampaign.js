@@ -42,7 +42,8 @@ function FrontCampaign() {
                 </figure>
 			</div>
             </div>
-            <a href="#">Know More</a>
+            <a href="#" className="FrontCampaign-btn">Know More</a>
+            <hr className="breakline"/>
         </div>
     )
 }

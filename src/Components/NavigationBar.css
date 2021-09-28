@@ -52,11 +52,14 @@
 }
 
 .sidebar-item-icon {
-  margin-right: 6px;
+  margin-right: 10px;
+  color: #ffd05c;
+  font-size: 1.2rem;
 }
 
 .sidebar-item-text {
-  /* font-size: 2rem; */
+  font-size: 1.2rem;
+  font-weight: 500;
   width: 100%;
 }
 
@@ -65,7 +68,7 @@
 }
 
 .sidebar-item-expand-arrow-expanded {
-  color: #09bb12;
+  color: #ffd05c;
   font-weight: bold;
 }
 
