@@ -94,7 +94,7 @@
   background: #44d7b6;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .FrontWorks {
     margin-left: 0;
     width: 100vw;
