@@ -108,8 +108,8 @@ figure.effect-julia p {
   font-size: 75%;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-500px, 0, 0);
-  transform: translate3d(-500px, 0, 0);
+  -webkit-transform: translate3d(-1000px, 0, 0);
+  transform: translate3d(-1000px, 0, 0);
 }
 
 figure.effect-julia p:first-child {
@@ -157,17 +157,21 @@ figure.effect-julia:hover p {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
 }
 
 @media only screen and (max-width: 1000px) {
   .FrontCampaign {
     margin-left: 0;
   }
+}
+
+@media only screen and (max-width: 600px) {
   .grid {
     margin-left: 5vw;
     margin-right: 5vw;
     display: grid;
-    grid-template-rows: 40vh 40vh 40vh;
+    grid-template-rows: auto auto auto;
     grid-template-columns: 1fr;
   }
 }

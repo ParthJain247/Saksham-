@@ -37,7 +37,7 @@
 
 .FrontWorks-clipitems {
   font-family: Roboto;
-  height: 23vh;
+  height: max-content;
   font-style: normal;
   border-radius: 10px;
   color: #ffffff;
