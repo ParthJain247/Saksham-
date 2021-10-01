@@ -5,9 +5,9 @@ function FrontCampaign() {
     return (
         <div className="FrontCampaign">
             <h1 className="FrontCampaign-title">Campaigns</h1>
-            <div class="content">
-            <div class="grid">
-                <figure class="effect-julia">
+            <div className="content">
+            <div className="grid">
+                <figure className="effect-julia">
                     <img src="images/Campaigns_1.png" alt="img21"/>
                     <figcaption>
                         <h2>Shiksha-Ak Nayi Ummed</h2>
@@ -18,7 +18,7 @@ function FrontCampaign() {
                         </div>
                     </figcaption>			
                 </figure>
-                <figure class="effect-julia">
+                <figure className="effect-julia">
                     <img src="images/Campaigns_2.png" alt="img22"/>
                     <figcaption>
                         <h2>Passionate</h2>
@@ -29,7 +29,7 @@ function FrontCampaign() {
                         </div>
                     </figcaption>			
                 </figure>
-                <figure class="effect-julia">
+                <figure className="effect-julia">
                     <img src="images/Campaigns_3.png" alt="img22"/>
                     <figcaption>
                         <h2>Passionate</h2>

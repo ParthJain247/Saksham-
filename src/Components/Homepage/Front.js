@@ -124,7 +124,7 @@ function Front() {
                 <FaYoutube className="connectIcons" />
                 <FaWhatsapp className="connectIcons" />
             </div>
-            <a className="front-learnMore" href="">Know More</a>
+            <a href="#" className="front-learnMore">Know More</a>
             <h2 className="front-scrollDown">Scroll Down</h2>
             <BiMouse className="scroll" />
         </div>

@@ -5,7 +5,7 @@ const WhySaksham = () => {
         <div className="whySakshamPage">
             <h1>Why Saksham?</h1>
             <div className="sakshampageheader">
-                <img className="sakshampageheaderimage" src="https://gogetfunding.com/wp-content/uploads/2017/06/5238748/img/474770-boy-1354582632-201-640x480.jpg" />
+                <img className="sakshampageheaderimage" src="https://gogetfunding.com/wp-content/uploads/2017/06/5238748/img/474770-boy-1354582632-201-640x480.jpg" alt="" />
                 <div className="sakshampageheadertext">
                     <p>“Saksham” is the brainchild of Mrs. Namita Gaur. She always had this feeling to serve the country, not by guns or by being in army but by serving the countrymen.</p>
                 </div>
@@ -13,7 +13,7 @@ const WhySaksham = () => {
             <div className="helpSomeoneEveryday">
                 <h2>Help Someone Every Day</h2>
                 <div className="helpSomeoneEverydaySection">
-                    <img src="https://citytoday.news/wp-content/uploads/2017/10/page8.3.jpg" />
+                    <img src="https://citytoday.news/wp-content/uploads/2017/10/page8.3.jpg" alt=""/>
                     <p>Every day, try to help someone who can’t reciprocate your kindness even if it is something small. It is our responsibility to do what we can. As you figure out how to help others it will force you to start thinking in a positive way.
 
                     The whole mentality revolves around “Serve Humans, Serve Humanity”. So whenever you want to help someone, just look around for the ones who needs the bare minimum and just spread smiles.
@@ -26,7 +26,7 @@ const WhySaksham = () => {
             </div>
             <div className="sakshamObjective">
                 <h2>Who We Are</h2>
-                <img className="whoweareimage" src="https://miro.medium.com/max/1400/1*qepHWl8JenUfVIxKNjtzrQ.jpeg" />
+                <img className="whoweareimage" src="https://miro.medium.com/max/1400/1*qepHWl8JenUfVIxKNjtzrQ.jpeg" alt="" />
                 <div className="whowearetext">
 
                     <p>“Saksham” people always reach where they are needed. we aims that one-day India will get its true Independence, by being free from Hunger, Poverty and Lack of education

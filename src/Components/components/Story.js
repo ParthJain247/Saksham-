@@ -10,7 +10,7 @@ const Story = ({ title, story, image }) => {
                 </div>
                 <div className="story-image">
                     {image &&
-                        <img className="image" src={image} />
+                        <img className="image" src={image} alt="" />
                     }
 
                 </div>

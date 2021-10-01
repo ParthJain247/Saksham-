@@ -2,7 +2,7 @@ import './Why_Saksham.css'
 import WeNeedYou from './components/WeNeedYou'
 import WhySaksham from './components/WhySaksham'
 
-const Why_Saksham = () => {
+const WhySakshamPage = () => {
     return (
         <div className="whysakshampage">
             <WhySaksham />
@@ -11,4 +11,4 @@ const Why_Saksham = () => {
     )
 }
 
-export default Why_Saksham
+export default WhySakshamPage

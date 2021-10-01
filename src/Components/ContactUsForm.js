@@ -26,7 +26,7 @@ const ContactUsForm = () => {
                 <div className="section-title">
                     <h2 className="title">Contact Us</h2>
                     <p>Let us know what you think! In order to provide better service,
-                                     please do not hesitate to give us your feedback. Thank you.</p>
+                                    please do not hesitate to give us your feedback. Thank you.</p>
                     <div className="contact-form-body">
                         <form id="contact-form"
                             onSubmit={handleSubmit}

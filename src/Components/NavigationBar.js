@@ -9,7 +9,7 @@ import { RiContactsFill } from 'react-icons/ri';
 import { BiNews } from 'react-icons/bi';
 import { BsCardImage } from 'react-icons/bs';
 import Sidebar from './Nav/Nav';
-import { useHistory, useLocation, Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 function NavigationBar() {
 const history = useHistory();

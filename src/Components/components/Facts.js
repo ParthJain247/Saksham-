@@ -7,7 +7,7 @@ const Facts = ({ header, image }) => {
             <h3>{header}</h3>
             <div className="facts">
                 <div className="facts-image">
-                    <img src={image} />
+                    <img src={image} alt="img" />
                 </div>
                 <div className="facts-text">
                     <ul>

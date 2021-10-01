@@ -4,10 +4,9 @@ import NavigationBar from './Components/NavigationBar';
 import {
   BrowserRouter,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
-import Why_Saksham from './Components/Why_Saksham';
+import WhySakshamPage from './Components/Why_Saksham';
 import Health from './Components/Health';
 
 function App() {
@@ -19,7 +18,7 @@ function App() {
           <Switch>
             <Route path="/WhySaksham">
               <div className="content-app">
-                <Why_Saksham />
+                <WhySakshamPage />
               </div>
             </Route>
             <Route path="/Health">
