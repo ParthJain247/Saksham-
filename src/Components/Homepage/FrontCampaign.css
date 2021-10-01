@@ -160,13 +160,11 @@ figure.effect-julia:hover p {
   grid-template-rows: auto;
 }
 
+
 @media only screen and (max-width: 1000px) {
   .FrontCampaign {
     margin-left: 0;
   }
-}
-
-@media only screen and (max-width: 600px) {
   .grid {
     margin-left: 5vw;
     margin-right: 5vw;
@@ -175,24 +173,8 @@ figure.effect-julia:hover p {
     grid-template-columns: 1fr;
   }
 }
-/* 
-.FrontCampaign-btn {
-  display: block;
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-  font-size: max(3vw, 30px);
-  background-color: #454360;
-  border-radius: 5%;
-  margin: auto;
-  width: max-content;
-  margin-bottom: 5vh;
-  margin-top: 5vh;
-}
 
-.FrontCampaign-btn:hover {
-  color: white;
-} */
+
 
 .FrontCampaign-btn {
   flex: 1 1 auto;

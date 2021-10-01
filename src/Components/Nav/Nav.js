@@ -5,12 +5,21 @@ import Divider from "@material-ui/core/Divider";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 import Collapse from "@material-ui/core/Collapse";
-function SidebarItem({ depthStep = 10, depth = 0, expanded, item, ...rest }) {
-    const [collapsed, setCollapsed] = React.useState(true);
-    const { label, items, Icon, onClick: onClickProp } = item;
 
+
+function Sidebar({ items, depthStep, depth, expanded }) {
+    
+    
+    const [collapsed, setCollapsed] = React.useState(-1);
+    function SidebarItem({ depthStep = 10, depth = 0, expanded, item, index, ...rest }) {
+    const { label, items, Icon, onClick: onClickProp } = item;
     function toggleCollapse() {
-        setCollapsed(prevValue => !prevValue);
+        if(collapsed === index){
+            setCollapsed(-1);
+        }
+        else{
+            setCollapsed(index);
+        }
     }
 
     function onClick(e) {
@@ -55,7 +64,7 @@ function SidebarItem({ depthStep = 10, depth = 0, expanded, item, ...rest }) {
             </div>
             {expandIcon}
         </ListItem>
-        <Collapse in={!collapsed} timeout="auto" unmountOnExit>
+        <Collapse in={collapsed === index} timeout='auto' unmountOnExit>
             {Array.isArray(items) ? (
             <List disablePadding dense>
                 {items.map((subItem, index) => (
@@ -77,8 +86,9 @@ function SidebarItem({ depthStep = 10, depth = 0, expanded, item, ...rest }) {
         </>
     );
     }
-
-function Sidebar({ items, depthStep, depth, expanded }) {
+    
+    
+    
     return (
         <div className="sidebar">
         <List disablePadding dense>
@@ -92,6 +102,7 @@ function Sidebar({ items, depthStep, depth, expanded }) {
                         depth={depth}
                         expanded={expanded}
                         item={sidebarItem}
+                        index = {index}
                     />
                 )}
             </React.Fragment>
