@@ -40,6 +40,10 @@
   margin: auto;
 }
 
+.AboutUs-avatar {
+  width: 20%;
+}
+
 .AboutUs-grid > p {
   background: #ffffff;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);

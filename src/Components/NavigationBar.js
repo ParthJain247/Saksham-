@@ -8,22 +8,27 @@ import { RiTeamFill } from 'react-icons/ri';
 import { RiContactsFill } from 'react-icons/ri';
 import { BiNews } from 'react-icons/bi';
 import { BsCardImage } from 'react-icons/bs';
-import Sidebar from './Nav/Nav'
+import Sidebar from './Nav/Nav';
+import { useHistory, useLocation, Link } from "react-router-dom";
 
+function NavigationBar() {
+const history = useHistory();
 function onClick(e, item) {
-    window.alert(JSON.stringify(item, null, 2));
+    history.push('/' + item.name)
 }
 
+
+
 const items = [
-    { name: "home", label: "Home", Icon: AiFillHome },
+    { name: "", label: "Home",Icon: AiFillHome, onClick },
     "divider",
     {
         name: "About-us",
         label: "About Us",
         Icon: FaUserAlt,
         items: [
-        { name: "statements", label: "Statements", onClick },
-        { name: "reports", label: "Reports", onClick }
+        { name: "Journey", label: "Journey", onClick },
+        { name: "WhySaksham", label: "Why Saksham", onClick }
         ]
     },
     "divider",
@@ -32,8 +37,11 @@ const items = [
         label: "Our works",
         Icon: SiHackhands,
         items: [
-        { name: "profile", label: "Profile" },
-        { name: "insurance", label: "Insurance", onClick },
+        { name: "Hunger", label: "Hunger", onClick },
+        { name: "Poverty", label: "Poverty", onClick },
+        { name: "Health", label: "Health", onClick },
+        { name: "Education", label: "Education", onClick },
+        { name: "WomenEmpowerment", label: "Women Empowerment", onClick },
         ]
     },
     "divider",
@@ -42,8 +50,9 @@ const items = [
         label: "Campaigns",
         Icon: SiCampaignmonitor,
         items: [
-        { name: "profile", label: "Profile" },
-        { name: "insurance", label: "Insurance", onClick },
+        { name: "Campaign1", label: "Campaign1", onClick },
+        { name: "Campaign2", label: "Campaign2", onClick },
+        { name: "Campaign3", label: "Campaign3", onClick },
         ]
     },
     "divider",
@@ -69,7 +78,7 @@ const items = [
     "divider"
 ];
 
-function NavigationBar() {
+
     return (
         <div className="NavigationBar">
             <img src="/images/logo-white.png" alt="Logo" />

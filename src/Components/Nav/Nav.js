@@ -5,7 +5,6 @@ import Divider from "@material-ui/core/Divider";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 import Collapse from "@material-ui/core/Collapse";
-
 function SidebarItem({ depthStep = 10, depth = 0, expanded, item, ...rest }) {
     const [collapsed, setCollapsed] = React.useState(true);
     const { label, items, Icon, onClick: onClickProp } = item;
@@ -87,12 +86,12 @@ function Sidebar({ items, depthStep, depth, expanded }) {
                 {sidebarItem === "divider" ? (
                 <Divider style={{ margin: "6px 0" }} />
                 ) : (
-                <SidebarItem
-                    depthStep={depthStep}
-                    depth={depth}
-                    expanded={expanded}
-                    item={sidebarItem}
-                />
+                    <SidebarItem
+                        depthStep={depthStep}
+                        depth={depth}
+                        expanded={expanded}
+                        item={sidebarItem}
+                    />
                 )}
             </React.Fragment>
             ))}

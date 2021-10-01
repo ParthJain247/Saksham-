@@ -1,0 +1,22 @@
+.ContactUsFormSection{
+    text-align: center;
+    padding: 5%;
+    background: linear-gradient(180deg,purple, white);
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.contact-form-group{
+    padding:10px;
+}
+
+.contact-form-body{
+    background-color: white;
+    margin: 7% 12%;
+    padding: 7%;
+    border-radius: 20px;
+}
+
+.MuiTextField-root{
+    width: 70%;
+}
