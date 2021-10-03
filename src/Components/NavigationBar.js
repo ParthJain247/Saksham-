@@ -27,8 +27,8 @@ const items = [
         label: "About Us",
         Icon: FaUserAlt,
         items: [
+            { name: "WhySaksham", label: "Why Saksham", onClick },
         { name: "Journey", label: "Journey", onClick },
-        { name: "WhySaksham", label: "Why Saksham", onClick }
         ]
     },
     "divider",
@@ -56,16 +56,16 @@ const items = [
         ]
     },
     "divider",
-    { name: "Happenings", label: "Happenings", Icon: BiNews },
+    { name: "Happenings", label: "Happenings", Icon: BiNews , onClick },
     "divider",
-    { name: "Gallary", label: "Media Center", Icon: BsCardImage },
+    { name: "Gallary", label: "Media Center", Icon: BsCardImage , onClick },
     "divider",
     { 
         name: "Join-us", 
         label: "Get Involved", 
         Icon: RiTeamFill ,
         items: [
-            { name: "individual", label: "Individual" },
+            { name: "individual", label: "Individual" , onClick },
             { name: "Corporate", label: "Corporate Partnership", onClick },
             { name: "Institutional", label: "Institutional Alliance", onClick },
             { name: "School", label: "School", onClick },
@@ -74,7 +74,7 @@ const items = [
         ]
     },
     "divider",
-    { name: "Contact", label: "Contact Us", Icon: RiContactsFill },
+    { name: "Contact", label: "Contact Us", Icon: RiContactsFill , onClick },
     "divider"
 ];
 

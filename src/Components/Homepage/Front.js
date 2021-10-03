@@ -8,6 +8,7 @@ import { FaYoutube } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
 import { BiMouse } from 'react-icons/bi';
 import Particles from "react-tsparticles";
+import {Link } from "react-router-dom";
 
 function Front() {
     return (
@@ -124,7 +125,7 @@ function Front() {
                 <FaYoutube className="connectIcons" />
                 <FaWhatsapp className="connectIcons" />
             </div>
-            <a href="#" className="front-learnMore">Know More</a>
+            <Link to="/WhySaksham" className="front-learnMore">Know More</Link>
             <h2 className="front-scrollDown">Scroll Down</h2>
             <BiMouse className="scroll" />
         </div>

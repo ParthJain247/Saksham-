@@ -26,6 +26,10 @@
   text-align: center;
 }
 
+.link-clip{
+  text-decoration: none;
+}
+
 .FrontWorks-Clips {
   display: grid;
   grid-template-columns: 1fr 1fr;

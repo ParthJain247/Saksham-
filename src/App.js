@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import WhySakshamPage from './Components/Why_Saksham';
 import Health from './Components/Health';
+import ContactUsForm from './Components/ContactUsForm';
 
 function App() {
     return (
@@ -23,6 +24,11 @@ function App() {
             <Route path="/Health">
               <div className="content-app">
                 <Health />
+              </div>
+            </Route>
+            <Route path="/Contact">
+              <div className="content-app">
+                <ContactUsForm />
               </div>
             </Route>
             <Route path="/">
