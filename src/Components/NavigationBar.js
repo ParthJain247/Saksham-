@@ -67,7 +67,6 @@ const items = [
         items: [
             { name: "individual", label: "Individual" , onClick },
             { name: "Corporate", label: "Corporate Partnership", onClick },
-            { name: "Institutional", label: "Institutional Alliance", onClick },
             { name: "School", label: "School", onClick },
             { name: "Volunteer", label: "Volunteer", onClick },
             { name: "Career", label: "Career", onClick },
