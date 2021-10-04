@@ -65,11 +65,9 @@ const items = [
         label: "Get Involved", 
         Icon: RiTeamFill ,
         items: [
-            { name: "individual", label: "Individual" , onClick },
+            { name: "Individual", label: "Individual" , onClick },
             { name: "Corporate", label: "Corporate Partnership", onClick },
             { name: "School", label: "School", onClick },
-            { name: "Volunteer", label: "Volunteer", onClick },
-            { name: "Career", label: "Career", onClick },
         ]
     },
     "divider",

@@ -8,7 +8,7 @@ import "aos/dist/aos.css"
 import 'font-awesome/css/font-awesome.min.css';
 import Parallax from 'react-rellax'
 
-class ContactForm extends React.Component {
+class CampaignsPage extends React.Component {
   
   constructor(props) {
     super(props);
@@ -258,4 +258,4 @@ class ContactForm extends React.Component {
   }
 }
 
-export default ContactForm;
+export default CampaignsPage;
