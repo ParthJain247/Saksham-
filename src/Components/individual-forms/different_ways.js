@@ -1,6 +1,14 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./different_ways.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faDonate,
+  faBookReader,
+  faUtensils,
+  faHandsHelping,
+  faShareAlt,
+} from "@fortawesome/free-solid-svg-icons";
 import { Row, Col } from "react-bootstrap";
 import FoodDonate from "./foodDonate";
 import MeetSched from "./meet-sched";
@@ -16,7 +24,13 @@ const DonateVolunteer = () => {
     <div className="Individual-page">
       <Row className="donation-rows">
         <Col className="donation-box">
-          <p>icon</p>
+          <p>
+            <FontAwesomeIcon
+              icon={faDonate}
+              size="4x"
+              style={{ color: "white" }}
+            />
+          </p>
           <h4>Donate Monthly</h4>
           <p>
             You can be a Helping Hands by donate monthly to NGO. Your donation
@@ -29,7 +43,9 @@ const DonateVolunteer = () => {
             setEduDonationShow(true);
           }}
         >
-          <p>icon</p>
+          <p>
+            <FontAwesomeIcon icon={faBookReader} size="4x" />
+          </p>
           <h4>Donate Education</h4>
           <p>
             You can sponsor a one child education for lifetime. You can donate
@@ -37,7 +53,13 @@ const DonateVolunteer = () => {
           </p>
         </Col>
         <Col className="donation-box" onClick={() => setFoodDonationShow(true)}>
-          <p>icon</p>
+          <p>
+            <FontAwesomeIcon
+              icon={faUtensils}
+              size="4x"
+              style={{ color: "white" }}
+            />
+          </p>
           <h4>Donate Food</h4>
           <p>
             You can sponsor food for a child to make healthier. You can donate
@@ -53,7 +75,9 @@ const DonateVolunteer = () => {
             setSocialsShow(true);
           }}
         >
-          <p>icon</p>
+          <p>
+            <FontAwesomeIcon icon={faShareAlt} size="4x" />
+          </p>
           <h4>Promote NGO</h4>
           <p>
             You can act as a change maker for NGO on social media, promoting
@@ -61,7 +85,13 @@ const DonateVolunteer = () => {
           </p>
         </Col>
         <Col className="donation-box" xs={8}>
-          <p>icon</p>
+          <p>
+            <FontAwesomeIcon
+              icon={faHandsHelping}
+              size="4x"
+              style={{ color: "white" }}
+            />
+          </p>
           <h4>Give A Hope</h4>
           <p>
             You are Saksham, the ones who have a decent source of income and are
