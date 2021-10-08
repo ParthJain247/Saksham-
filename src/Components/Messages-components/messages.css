@@ -1,6 +1,6 @@
 .item-messages {
   border-radius: 5%;
-  margin: 3em 0;
+  margin: 3em 3em !important;
   padding-right: 2.5%;
   width: 20pc;
   height: 35.5pc;
@@ -80,29 +80,33 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 280px) {
+@media screen and (min-width: 280px) and (max-width: 500px) {
   .item-messages {
-    margin-left: 3em !important;
+    margin-left: 3.5em !important;
+    width: 20pc !important;
+    height: 35.5pc !important;
   }
 }
 
-@media screen and (min-width: 300px) and (max-width: 360px) {
+@media screen and (min-width: 501px) and (max-width: 610px) {
   .item-messages {
-    margin: 3em -2em;
-    width: 15pc;
-    height: 25.5pc;
+    margin: 3em 6em !important;
+    width: 20pc !important;
+    height: 30pc !important;
   }
 
   .item-messages .item-pic {
+    width: 25% !important;
+
     top: 7rem;
   }
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 611px) {
   .item-messages {
-    margin: 3em -0.5em;
-    width: 15pc;
-    height: 25.5pc;
+    margin: 3em 3em !important;
+    width: 15pc !important;
+    height: 25.5pc !important;
   }
   .item-messages .item-pic {
     top: 7rem;

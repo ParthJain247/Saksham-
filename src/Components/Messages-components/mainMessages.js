@@ -15,10 +15,9 @@ const MainMessages = () => {
   return (
     <div className="Msg-page">
       <div className="MsgBoxContainer">
-        <h1>
-          <i>WORDS OF OUR FOUNDERS.</i>
-        </h1>
-        <p>
+        <h1>WORDS OF OUR FOUNDERS.</h1>
+
+        <p className="msgIntoPara">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
           itaque ipsa nam quam obcaecati nostrum eos modi quia ipsam, dolor
           possimus amet architecto error? Accusamus porro iste quo itaque

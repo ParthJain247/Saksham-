@@ -1,12 +1,14 @@
 .Msg-page {
   overflow-x: hidden;
+  width: 100% !important;
 }
+
 .MsgBoxContainer {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   padding: 1em;
-  width: 84%;
+  width: 100%;
   overflow-x: hidden;
 }
 
