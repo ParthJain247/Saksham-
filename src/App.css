@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+.content-app {
+  margin-left: 20vw;
+}
+@media only screen and (max-width: 1000px) {
+  .content-app {
+    margin-left: 0;
+  }
+}
+
+.indi-donation {
+  padding: 3rem;
+}

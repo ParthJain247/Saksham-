@@ -1,0 +1,80 @@
+.NavigationBar {
+  height: 100vh;
+  width: 20vw;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  background-color: #353353;
+  border-right: 3px solid #4a4865;
+  color: #fff;
+}
+
+.NavigationBar > img {
+  width: 10vw;
+  margin: auto;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+}
+
+.list-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list-links:hover > {
+  background-color: #4a4865;
+}
+
+.NavigationBar > h1 {
+  font-size: 1vw;
+  font-family: Roboto;
+  font-style: normal;
+  margin: auto;
+  margin-bottom: 0;
+  color: #818097;
+}
+
+.sidebar-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-item-content {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sidebar-item-icon {
+  margin-right: 10px;
+  color: #ffd05c;
+  font-size: 1rem;
+}
+
+.sidebar-item-text {
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+}
+
+.sidebar-item-expand-arrow {
+  font-size: 1.2rem !important;
+}
+
+.sidebar-item-expand-arrow-expanded {
+  color: #ffd05c;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+  .NavigationBar {
+    width: 100vw;
+    display: none;
+  }
+}

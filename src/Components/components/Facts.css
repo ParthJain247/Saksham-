@@ -1,0 +1,28 @@
+.facts{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 2%;
+    justify-content: center;
+}
+
+h3{
+    font-size: 40px;
+    color: peru;
+    text-transform: uppercase;
+}
+
+
+
+img{
+    width: 100%;
+}
+
+.facts-text{
+    text-align: left;
+    padding-left: 5%;
+    line-height: 30px;
+}
+
+li{
+    list-style: linear-gradient(#E6DADA, #274046);
+}

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Quicksand:wght@300&display=swap");
+
+.Journey-page {
+  overflow-x: hidden;
+}
+.title {
+  font-size: 5rem;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  align-self: center;
+  text-justify: center;
+}
+
+h3 {
+  padding-top: 0.25em;
+}
+
+.vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left)
+  .vertical-timeline-element-content
+  .date {
+  right: 140% !important;
+}
+.vertical-timeline-element:nth-child(odd):not(.vertical-timeline-element--right)
+  .vertical-timeline-element-content
+  .vertical-timeline-element-date {
+  left: 140% !important;
+}
+.vertical-timeline--two-columns
+  .vertical-timeline-element-content
+  .vertical-timeline-element-date {
+  font-size: 200% !important;
+  top: -4% !important;
+  color: black;
+  font-weight: 700;
+}
+
+/* .vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+} */
+
+#description {
+  margin: 1.5em 0 2em 0;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+.text-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  column-gap: 5%;
+}
+
+.date,
+.journey-content,
+#description {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* .vertical-timeline-element-content.bounce-in:nth-child(even):not(.vertical-timeline-element-content--left) {
+  width: 40% !important;
+} */
+
+/* .vertical-timeline-element-content:nth-child(odd):not(.vertical-timeline-element-content--left) {
+  left: 5% !important;
+} */
+
+.vertical-timeline-element-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: rgb(14, 10, 10);
+  align-self: center;
+  text-align: center;
+  font-weight: 700;
+}
+
+.image {
+  align-self: center;
+  height: 50%;
+  width: 30%;
+}

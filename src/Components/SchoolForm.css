@@ -1,0 +1,30 @@
+.schoolForm{
+    background-color: teal;
+    padding: 10% 0;
+}
+
+.schoolFormContainer{
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    color: teal;
+}
+
+.schoolFormContainerText{
+    padding: 0 5% 5%;
+}
+
+.FormGroupContainer{
+    padding: 10px;
+}
+
+.SkillsToContribute{
+    text-align: left;
+    padding: 6% 16%;
+    color: gray;
+    font-weight: 800;
+}
