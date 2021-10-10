@@ -1,59 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Quicksand:wght@300&display=swap");
 
+.Journey-page .heading .title {
+  padding: 1em 0 1em 4em;
+  font-family: Montserrat;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 88px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+
 .Journey-page {
   overflow-x: hidden;
+  background: #f9a826;
 }
-.title {
-  font-size: 5rem;
+.journey-content .text-content .title {
+  width: 90%;
+  padding-top: 1em !important;
+  color: #fff !important;
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
   align-self: center;
   text-justify: center;
 }
 
-h3 {
-  padding-top: 0.25em;
+.journey-content .text-content .image {
+  margin-left: 0 !important;
+  height: 5em;
+  width: 5em;
 }
 
-.vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left)
-  .vertical-timeline-element-content
-  .date {
-  right: 140% !important;
-}
-.vertical-timeline-element:nth-child(odd):not(.vertical-timeline-element--right)
-  .vertical-timeline-element-content
-  .vertical-timeline-element-date {
-  left: 140% !important;
-}
-.vertical-timeline--two-columns
-  .vertical-timeline-element-content
-  .vertical-timeline-element-date {
-  font-size: 200% !important;
-  top: -4% !important;
-  color: black;
-  font-weight: 700;
+.journey-timeline {
+  margin-left: 17em !important;
 }
 
-/* .vertical-timeline-element-content {
-  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
-    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
-  padding: 2em 3em !important;
-} */
+.vertical-timeline-element-content {
+  border-radius: 86px !important;
+  box-shadow: 45px 24px 4px rgba(0, 0, 0, 0.25) !important;
+}
 
-#description {
-  margin: 1.5em 0 2em 0;
+.journey-timeline .journey-content-main {
+  width: 85%;
 }
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: flex-start;
-}
+
 .text-content {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  column-gap: 5%;
+  column-gap: 1em;
+}
+
+.journey-content {
+  padding: 0 4em !important;
 }
 
 .date,
@@ -62,25 +62,8 @@ h3 {
   font-family: "Quicksand", sans-serif;
 }
 
-/* .vertical-timeline-element-content.bounce-in:nth-child(even):not(.vertical-timeline-element-content--left) {
-  width: 40% !important;
-} */
-
-/* .vertical-timeline-element-content:nth-child(odd):not(.vertical-timeline-element-content--left) {
-  left: 5% !important;
-} */
-
-.vertical-timeline-element-title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  color: rgb(14, 10, 10);
-  align-self: center;
-  text-align: center;
-  font-weight: 700;
-}
-
-.image {
-  align-self: center;
-  height: 50%;
-  width: 30%;
+.date {
+  font-size: 48px !important;
+  opacity: 1 !important;
+  padding-left: 1em !important;
 }
