@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Quicksand:wght@300&display=swap");
 
 .Journey-page .heading .title {
-  padding: 1em 0 1em 4em;
   font-family: Montserrat;
   font-size: 72px;
   font-style: normal;
@@ -18,7 +17,6 @@
 }
 .journey-content .text-content .title {
   width: 90%;
-  padding-top: 1em !important;
   color: #fff !important;
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
@@ -32,17 +30,12 @@
   width: 5em;
 }
 
-.journey-timeline {
-  margin-left: 17em !important;
-}
-
 .vertical-timeline-element-content {
-  border-radius: 86px !important;
   box-shadow: 45px 24px 4px rgba(0, 0, 0, 0.25) !important;
 }
 
 .journey-timeline .journey-content-main {
-  width: 85%;
+  height: fit-content;
 }
 
 .text-content {
@@ -53,7 +46,7 @@
 }
 
 .journey-content {
-  padding: 0 4em !important;
+  padding: 0 !important;
 }
 
 .date,
@@ -65,5 +58,179 @@
 .date {
   font-size: 48px !important;
   opacity: 1 !important;
-  padding-left: 1em !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .journey-timeline {
+    margin-left: 0.35em !important;
+  }
+
+  .Journey-page .heading .title {
+    padding: 1em 0 1em 0.5em !important;
+    font-size: 60px !important;
+  }
+
+  .journey-timeline .journey-content-main {
+    width: 110%;
+  }
+  .vertical-timeline-element-content {
+    border-radius: 53px !important;
+  }
+  .journey-content .text-content .title {
+    padding-top: 0em !important;
+    color: #fff !important;
+  }
+  .journey-content {
+    padding: 0 !important;
+    padding-right: 1em !important;
+  }
+
+  .date {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .journey-timeline {
+    margin-left: 10em !important;
+  }
+
+  .Journey-page .heading .title {
+    padding: 1em 0 1em 2.5em !important;
+  }
+
+  .journey-timeline .journey-content-main {
+    width: 95%;
+  }
+  .vertical-timeline-element-content {
+    border-radius: 53px !important;
+    height: fit-content;
+  }
+  .journey-content .text-content .title {
+    padding: 0 !important;
+    padding-right: 2.5em !important;
+    color: #ffffff !important;
+  }
+  #description {
+    padding: 0em !important;
+    padding-right: 7em !important;
+  }
+  .journey-content {
+    padding: 0 !important;
+  }
+  .date {
+    padding: 0 !important;
+    padding-left: 1em !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .journey-timeline {
+    margin-left: 10 !important;
+  }
+
+  .Journey-page .heading .title {
+    padding: 1em 0 1em 2.5em !important;
+    font-size: 72px !important;
+  }
+
+  .journey-timeline .journey-content-main {
+    width: 90%;
+  }
+  .vertical-timeline-element-content {
+    border-radius: 53px !important;
+    height: fit-content;
+  }
+  .journey-content .text-content .title {
+    padding: 0.5em !important;
+    padding-right: 2.5em !important;
+    color: #ffffff !important;
+  }
+  #description {
+    padding: 0.5em !important;
+    padding-right: 4em !important;
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .journey-timeline {
+    margin-left: 19em !important;
+  }
+
+  .Journey-page .heading .title {
+    padding: 1em 0 1em 4.5em !important;
+  }
+
+  .journey-timeline .journey-content-main {
+    width: 80%;
+  }
+  .vertical-timeline-element-content {
+    border-radius: 83px !important;
+    height: fit-content;
+  }
+  .journey-content .text-content .title {
+    padding: 0.5em !important;
+    padding-right: 2.5em !important;
+    color: #ffffff !important;
+  }
+  #description {
+    padding: 1em !important;
+    padding-right: 7em !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .journey-timeline {
+    margin-left: 12em !important;
+  }
+
+  .Journey-page .heading .title {
+    padding: 1em 0 1em 3em !important;
+  }
+
+  .journey-timeline .journey-content-main {
+    width: 90%;
+  }
+  .vertical-timeline-element-content {
+    border-radius: 53px !important;
+    height: fit-content;
+  }
+  .journey-content .text-content .title {
+    padding: 0.5em !important;
+    padding-right: 2.5em !important;
+    color: #ffffff !important;
+  }
+  #description {
+    padding: 1em !important;
+    padding-right: 3em !important;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .journey-timeline {
+    margin-left: 21em !important;
+  }
+
+  .Journey-page .heading .title {
+    padding: 1em 0 1em 2.5em !important;
+  }
+
+  .journey-timeline .journey-content-main {
+    width: 80%;
+  }
+  .vertical-timeline-element-content {
+    border-radius: 83px !important;
+    height: fit-content;
+  }
+  .journey-content .text-content .title {
+    padding: 0.5em !important;
+    padding-right: 2.5em !important;
+    color: #ffffff !important;
+  }
+  #description {
+    padding: 1em !important;
+    padding-right: 5em !important;
+  }
 }
