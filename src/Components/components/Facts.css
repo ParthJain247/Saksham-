@@ -1,17 +1,15 @@
 .facts{
     display: grid;
     grid-template-columns: 30% 70%;
-    margin: 2%;
+    margin: 5% 3% 10%;
     justify-content: center;
 }
 
-h3{
+.our-works-facts > h3{
     font-size: 40px;
-    color: peru;
+    color: #2a0944,;
     text-transform: uppercase;
 }
-
-
 
 img{
     width: 100%;

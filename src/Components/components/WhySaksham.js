@@ -3,7 +3,7 @@ import './WhySaksham.css'
 const WhySaksham = () => {
     return (
         <div className="whySakshamPage">
-            <h1>Why Saksham?</h1>
+            <h1 className="why-saksham-heading">Why Saksham?</h1>
             <div className="sakshampageheader">
                 <img className="sakshampageheaderimage" src="https://gogetfunding.com/wp-content/uploads/2017/06/5238748/img/474770-boy-1354582632-201-640x480.jpg" />
                 <div className="sakshampageheadertext">
@@ -11,7 +11,7 @@ const WhySaksham = () => {
                 </div>
             </div>
             <div className="helpSomeoneEveryday">
-                <h2>Help Someone Every Day</h2>
+                <h2 className="help-someone-everyday">Help Someone Every Day</h2>
                 <div className="helpSomeoneEverydaySection">
                     <img src="https://citytoday.news/wp-content/uploads/2017/10/page8.3.jpg" />
                     <p>Every day, try to help someone who can’t reciprocate your kindness even if it is something small. It is our responsibility to do what we can. As you figure out how to help others it will force you to start thinking in a positive way.

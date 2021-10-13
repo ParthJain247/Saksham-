@@ -3,7 +3,7 @@ import FactItem from './FactItem'
 
 const Facts = ({ header, image, facts }) => {
     return (
-        <>
+        <div className="our-works-facts">
             <h3>{header}</h3>
             <div className="facts">
                 <div className="facts-image">
@@ -17,7 +17,7 @@ const Facts = ({ header, image, facts }) => {
                     </ul>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

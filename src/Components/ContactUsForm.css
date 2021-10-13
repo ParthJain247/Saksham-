@@ -1,21 +1,36 @@
 .ContactUsFormSection{
     text-align: center;
     padding: 5%;
-    background: linear-gradient(180deg,purple, white);
-    color: white;
+    background: linear-gradient(180deg,#ffd05c, white);
+    color: black;
     letter-spacing: 1.5px;
 }
 
-.contact-form-group{
-    padding:10px;
+.contact-us-form-container{
+    background-color: white;
+    margin: 12% 12%;
+    padding: 7%;
+    border-radius: 20px;
 }
 
-.contact-form-body{
+.contact-us-title{
+    padding: 0 0 5%;
+}
+
+.contact-us-para{
+    padding: 0 5% 5%;
+}
+
+.contact-form-group{
+    padding:20px;
+}
+
+/* .contact-form-body{
     background-color: white;
     margin: 7% 12%;
     padding: 7%;
     border-radius: 20px;
-}
+}  */
 
 .MuiTextField-root{
     width: 70%;

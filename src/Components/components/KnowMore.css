@@ -1,8 +1,9 @@
-.cards{
+.know-more-cards{
     font-family: 'Roboto', sans-serif;
-    line-height: 30px;
+    line-height: 35px;
     color: black;
     font-size: 20px;
+    background-color: #ffd05c;
 }
 
 .know-more-title{
@@ -11,24 +12,25 @@
     color: black;
     padding: 5%;
     text-decoration: underline;
-    text-decoration-color: tomato;
+    text-decoration-color: #2a0944;
 }
 
-.introduction{
+.know-more-introduction{
     width: 80%;
     margin: auto;
     padding-bottom: 5%;
 }
 
-.card{
+.know-more-card{
     display: grid;
     grid-template-columns: 50% 50%;
     column-gap: 10px;
     row-gap: 1em;
+    background-color: white;
 }
 
 @media screen and (max-width: 900px){
-    .card{
+    .know-more-card{
         display: unset;
     }
 }

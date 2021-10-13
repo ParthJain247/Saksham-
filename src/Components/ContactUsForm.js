@@ -22,10 +22,10 @@ const ContactUsForm = () => {
 
     return (
         <div className="ContactUsFormSection">
-            <div className="container">
+            <div className="contact-us-form-container">
                 <div className="section-title">
-                    <h2 className="title">Contact Us</h2>
-                    <p>Let us know what you think! In order to provide better service,
+                    <h2 className="contact-us-title">Contact Us</h2>
+                    <p className="contact-us-para">Let us know what you think! In order to provide better service,
                                     please do not hesitate to give us your feedback. Thank you.</p>
                     <div className="contact-form-body">
                         <form id="contact-form"
@@ -64,7 +64,18 @@ const ContactUsForm = () => {
                                     onChange={e => setMessage(e.target.value)}
                                 />
                             </div>
-                            <Button type="submit" variant="contained">Submit</Button>
+                            <Button
+                                style={{
+                                    color: '#2a0944',
+                                    width: '50%',
+                                    padding: '2%',
+                                    marginBottom: '7%',
+                                    borderBlockColor: '#2a0944'
+                                }}
+                                type="submit"
+                                variant="outlined">
+                                Submit
+                                </Button>
                         </form>
 
                     </div>
