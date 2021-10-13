@@ -8,7 +8,7 @@ import CampaignsPage from "./Components/campaign";
 import SchoolForm from "./Components/SchoolForm";
 import ContactUsForm from "./Components/ContactUsForm";
 import { Container } from "react-bootstrap";
-import Form from "./Components/individual-forms/different_ways";
+import Form from "./Components/individual-forms/individual/form";
 import Gallery from "./Components/gallery";
 import Journey from "./Components/journey-components/Journey";
 import MainMessages from "./Components/Messages-components/mainMessages";
