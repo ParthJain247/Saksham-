@@ -1,29 +1,57 @@
 .Msg-page {
   overflow-x: hidden;
   width: 100% !important;
+  background: #f9a826;
 }
 
 .MsgBoxContainer {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 1em;
+  padding: 7em 10em 0 15em;
   width: 100%;
   overflow-x: hidden;
 }
 
+.MsgBoxContainer h1 {
+  color: white;
+  font-style: italic !important;
+  font-weight: 700 !important;
+}
+
 .MsgBoxContainer p {
-  color: #9d9d9e;
+  color: white;
 }
 
 .MsgCarousel {
   width: 100%;
+  padding-top: 16.5em !important;
+
   padding-left: 1em !important;
-  background: #ffdd00;
   border-radius: 1em;
+  height: 65em;
 }
 
-.swiper-button-prev,
+.swiper-button-next,
+.swiper-button-prev {
+  left: 50%;
+  transform: rotate(90deg);
+  transform-origin: left center;
+  color: black !important;
+}
+
+.swiper-button-prev {
+  top: 1em !important;
+  left: 65em !important;
+}
+
 .swiper-button-next {
-  margin: 0 1em;
+  top: auto !important;
+  bottom: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .MsgBoxContainer {
+    padding: 3em 4em;
+  }
 }

@@ -1,114 +1,74 @@
-.item-messages {
-  border-radius: 5%;
-  margin: 3em 3em !important;
-  padding-right: 2.5%;
-  width: 20pc;
-  height: 35.5pc;
-  position: relative;
-  background-color: transparent !important;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.item-messages .msg .btn {
-  color: blanchedalmond !important;
-  background-color: #7a4579;
-  margin-bottom: 0;
-  font-weight: 700;
-}
-.item-messages .msg {
-  border-bottom-right-radius: 5%;
-  border-bottom-left-radius: 5%;
-  background-color: #ff3c36;
-  margin-bottom: 9px;
-  height: 65%;
-  bottom: 5%;
-  text-align: right;
-  padding: 0.5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  row-gap: 10%;
-  align-content: flex-end;
-  -webkit-clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0 100%);
-  clip-path: polygon(0 7.5%, 100% 0%, 100% 100%, 0 100%);
-}
-.item-messages .msg .content {
-  top: 0;
-}
-.item-messages .bg-picture {
-  text-align: center;
-  background-size: cover;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-top-right-radius: 5%;
-  border-top-left-radius: 5%;
-  overflow: hidden;
-  height: 35%;
-  -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 90%, 0 100%);
-  clip-path: polygon(0 0%, 100% 0%, 100% 90%, 0 100%);
-}
-
-.item-messages .bg-picture,
-.item-messages .msg {
-  position: absolute;
-  width: 100%;
-}
-
-.item-messages .buttons {
+.msg-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
+  background-color: #000;
+  border-top-left-radius: 290.053px;
+  border-bottom-left-radius: 290.053px;
+  border-top-right-radius: 290.053px;
+  width: 90%;
+  height: 210%;
+  /* margin-left: 14em; */
+  padding-right: 0 !important;
 }
 
-.item-messages .item-pic {
+.msg-container .msg-image {
+  width: 40%;
+}
+
+.msg-container .msg-text {
+  padding: 3em;
+  height: 10.25em;
+  width: 60%;
   text-align: center;
-  background-size: cover;
+  color: #fff;
+}
+
+.msg-container .msg-buttons {
+  display: flex;
+  flex-direction: row;
   position: absolute;
-  border: none;
-  height: 15%;
-  width: 25%;
-  border-radius: 50%;
-  box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.3);
-  left: 13%;
-  top: 10rem;
-  z-index: 1;
-  transform: translateX(-50%);
-  cursor: pointer;
+  top: 160%;
+  column-gap: 1em;
+}
+.msg-buttons .msg-follow,
+.msg-buttons .msg-more {
+  border-radius: 2rem;
+  background-color: #a12568;
 }
 
-@media screen and (min-width: 280px) and (max-width: 500px) {
-  .item-messages {
-    margin-left: 3.5em !important;
-    width: 20pc !important;
-    height: 35.5pc !important;
+@media screen and (max-width: 600px) {
+  .msg-container .msg-buttons {
+    display: flex;
+    flex-direction: column;
+    left: 50%;
   }
 }
 
-@media screen and (min-width: 501px) and (max-width: 610px) {
-  .item-messages {
-    margin: 3em 6em !important;
-    width: 20pc !important;
-    height: 30pc !important;
-  }
-
-  .item-messages .item-pic {
-    width: 25% !important;
-
-    top: 7rem;
+@media screen and (min-width: 600px) {
+  .msg-container .msg-buttons {
+    display: flex;
+    flex-direction: column;
+    left: 50%;
   }
 }
 
-@media screen and (min-width: 611px) {
-  .item-messages {
-    margin: 3em 3em !important;
-    width: 15pc !important;
-    height: 25.5pc !important;
+@media screen and (min-width: 768px) {
+  .msg-container .msg-buttons {
+    display: flex;
+    flex-direction: row;
   }
-  .item-messages .item-pic {
-    top: 7rem;
+}
+
+@media screen and (min-width: 980px) {
+  .msg-container .msg-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .msg-container .msg-buttons {
+    left: 50%;
   }
 }
