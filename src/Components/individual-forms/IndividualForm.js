@@ -136,7 +136,7 @@ const Individual = () => {
   };
   return (
     <>
-      <Container className="individual-container" fluid>
+      <div className="individual-container">
         <div className="individual-intro">
           <h2 className="individual-heading">Individual Donation</h2>
           <p className="individual-para">
@@ -378,7 +378,7 @@ const Individual = () => {
             </Button>
           </div>
         </div>
-      </Container>
+      </div>
     </>
   );
 };

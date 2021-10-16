@@ -55,3 +55,10 @@
     padding: 3em 4em;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .Msg-page{
+    background: #2A0944;
+  }
+  
+}

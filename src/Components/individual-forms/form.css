@@ -1,5 +1,6 @@
 .individual-container {
   width: 100%;
+  overflow-x: hidden !important;
 }
 
 .individual-intro {
