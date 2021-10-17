@@ -11,7 +11,7 @@ import React, { useState } from 'react';
 
 const useStyles = makeStyles({
     root: {
-        background: "linear-gradient(45deg, rgb(133, 104, 187) 30%, #eef2f3 90%)",
+        background: "linear-gradient(45deg, #ffd05c 30%, #eef2f3 90%)",
         border: "3px solid white",
         color: 'white',
         borderRadius: "50px",

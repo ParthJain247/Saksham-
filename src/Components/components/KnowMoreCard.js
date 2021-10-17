@@ -4,7 +4,7 @@ const KnowMoreCard = ({ heading, content, color }) => {
     return (
         <div className="individual-card">
             <div className="card-content">
-                <h4>{heading}</h4>
+                <h4 className="know-more-heading">{heading}</h4>
                 <p>{content}</p>
             </div>
         </div>

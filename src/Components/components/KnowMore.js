@@ -11,14 +11,14 @@ import KnowMoreCard from './KnowMoreCard';
 const KnowMore = ({ title, body }) => {
     const text = [<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>]
     return (
-        <div class="cards">
+        <div class="know-more-cards">
             <div className="know-more-title">
                 {title}
             </div>
-            <div className="introduction">
+            <div className="know-more-introduction">
                 {body}
             </div>
-            <div className="card">
+            <div className="know-more-card">
                 <KnowMoreCard heading='Title 1' content={text} />
                 <KnowMoreCard heading='Another Title' content={text} />
                 <KnowMoreCard heading='Title' content={text} />
