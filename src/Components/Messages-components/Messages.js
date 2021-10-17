@@ -1,32 +1,32 @@
 import React from "react";
 import "./messages.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Container, Button } from "react-bootstrap";
 
 const Messages = (props) => {
   const { imageUrl, content, user } = props;
   return (
     <>
-      <div className="container-messages">
-        <div className="item-messages">
-          <div
-            className="item-pic"
-            style={{
-              backgroundImage: `url(${user})`,
-            }}
-          ></div>
-          <div
-            className="bg-picture"
-            style={{ backgroundImage: `url(${imageUrl})` }}
-          ></div>
-          <div className="msg">
-            <div className="content">{content}</div>
-            <div className="buttons">
-              <button className="btn">FOLLOW</button>
-              <button className="btn">MORE INFO</button>
-            </div>
+      <Container className="msg-container">
+        <div className="msg-text">
+          <div className="msg-header">hye</div>
+          <div className="msg-context">{content}</div>
+        </div>
+        <div
+          className="msg-image"
+          style={{
+            backgroundImage: `url(${imageUrl})`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            borderTopRightRadius: "240px",
+          }}
+        >
+          <div className="msg-buttons">
+            <Button className=" msg-follow">Follow</Button>
+            <Button className=" msg-more">More Info</Button>
           </div>
         </div>
-      </div>
+      </Container>
     </>
   );
 };

@@ -15,7 +15,6 @@ let elements = [
     description:
       "'Saksham- A Helping Hand Foundation' is a Non-Profit body founded in 2011 when its founder Mrs. Namita Gaur pitched in by offering small help to the underprivileged children.",
     date: "2011",
-    icon: "",
     icon: Image1,
   },
   {

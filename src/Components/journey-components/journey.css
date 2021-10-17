@@ -11,6 +11,11 @@
   color: #fff;
 }
 
+.journey-icon {
+  background: #2a0944;
+  color: #fff;
+}
+
 .Journey-page {
   overflow-x: hidden;
   background: #f9a826;
@@ -232,5 +237,21 @@
   #description {
     padding: 1em !important;
     padding-right: 5em !important;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .Journey-page .heading .title {
+    padding-left: 11em !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Journey-page {
+    background: #2a0944;
+  }
+
+  .journey-icon {
+    background: #f9a826;
   }
 }
