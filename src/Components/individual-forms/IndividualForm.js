@@ -11,6 +11,9 @@ import {
 import { Row, Form, Button } from "react-bootstrap";
 // import indiLayout from "./indi.png";
 const IndividualForm = () => {
+  const foodSub = document.getElementsByClassName("food-submenu");
+  const eduSub = document.getElementsByClassName("edu-submenu");
+  const followSub = document.getElementsByClassName("follow-submenu");
   const [isIncorrect, setIsIncorrect] = useState(false);
   const [isNotDigits, setIsNotDigits] = useState(false);
   const [isError, setIsError] = useState(false);
@@ -59,9 +62,7 @@ const IndividualForm = () => {
     const donationType = document.getElementsByClassName(
       "individual-donation-button"
     );
-    const foodSub = document.getElementsByClassName("food-submenu");
-    const eduSub = document.getElementsByClassName("edu-submenu");
-    const followSub = document.getElementsByClassName("follow-submenu");
+
     for (let i = 0; i < foodSub.length; i++) {
       if (foodSub[i].style.display === "block") {
         foodSub[i].style.display = "none";
@@ -71,7 +72,7 @@ const IndividualForm = () => {
     }
 
     for (let i = 0; i < eduSub.length; i++) {
-      if (foodSub[i].style.display === "block") {
+      if (eduSub[i].style.display === "block") {
         eduSub[i].style.display = "none";
       }
       eduSub[i].style.display = "block";
@@ -93,35 +94,81 @@ const IndividualForm = () => {
   };
 
   const foodSubmenu = () => {
-    const foodSub = document.getElementsByClassName("food-submenu");
-
     for (let i = 0; i < foodSub.length; i++) {
       if (foodSub[i].style.display === "block") {
         foodSub[i].style.display = "none";
       } else {
         foodSub[i].style.display = "block";
       }
+
       foodSub[i].style.display = "block";
       foodSub[i].classList.toggle("food-slide-out");
       foodSub[i].classList.toggle("food-slide-in");
     }
+    for (let i = 0; i < eduSub.length; i++) {
+      if (foodSub[i].style.display === "block") {
+        eduSub[i].style.display = "none";
+      }
+      eduSub[i].style.display = "block";
+      eduSub[i].classList.add("edu-slide-out");
+      eduSub[i].classList.remove("edu-slide-in");
+    }
+    for (let i = 0; i < followSub.length; i++) {
+      if (followSub[i].style.display === "block") {
+        followSub[i].style.display = "none";
+      }
+      followSub[i].style.display = "block";
+      followSub[i].classList.add("follow-slide-out");
+      followSub[i].classList.remove("follow-slide-in");
+    }
   };
 
   const eduSubmenu = () => {
-    const eduSub = document.getElementsByClassName("edu-submenu");
     for (let i = 0; i < eduSub.length; i++) {
       if (eduSub[i].style.display === "block") {
         eduSub[i].style.display = "none";
       } else {
         eduSub[i].style.display = "block";
       }
+
       eduSub[i].style.display = "block";
       eduSub[i].classList.toggle("edu-slide-out");
       eduSub[i].classList.toggle("edu-slide-in");
     }
+    for (let i = 0; i < foodSub.length; i++) {
+      if (foodSub[i].style.display === "block") {
+        foodSub[i].style.display = "none";
+      }
+      foodSub[i].style.display = "block";
+      foodSub[i].classList.add("food-slide-out");
+      foodSub[i].classList.remove("food-slide-in");
+    }
+    for (let i = 0; i < followSub.length; i++) {
+      if (followSub[i].style.display === "block") {
+        followSub[i].style.display = "none";
+      }
+      followSub[i].style.display = "block";
+      followSub[i].classList.add("follow-slide-out");
+      followSub[i].classList.remove("follow-slide-in");
+    }
   };
   const followSubmenu = () => {
-    const followSub = document.getElementsByClassName("follow-submenu");
+    for (let i = 0; i < foodSub.length; i++) {
+      if (foodSub[i].style.display === "block") {
+        foodSub[i].style.display = "none";
+      }
+      foodSub[i].style.display = "block";
+      foodSub[i].classList.add("food-slide-out");
+      foodSub[i].classList.remove("food-slide-in");
+    }
+    for (let i = 0; i < eduSub.length; i++) {
+      if (eduSub[i].style.display === "block") {
+        eduSub[i].style.display = "none";
+      }
+      eduSub[i].style.display = "block";
+      eduSub[i].classList.add("edu-slide-out");
+      eduSub[i].classList.remove("edu-slide-in");
+    }
     for (let i = 0; i < followSub.length; i++) {
       if (followSub[i].style.display === "block") {
         followSub[i].style.display = "none";
@@ -213,7 +260,7 @@ const IndividualForm = () => {
                   onClick={showDonationType}
                   className="donationFields individual-collection-button"
                 >
-                  Donate
+                  Click Here to Select Donation
                 </Button>
                 <Button
                   onClick={foodSubmenu}
