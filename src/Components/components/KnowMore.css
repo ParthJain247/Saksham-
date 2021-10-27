@@ -1,9 +1,13 @@
-.know-more-cards{
+.know-more-section{
     font-family: 'Roboto', sans-serif;
     line-height: 35px;
     color: black;
-    font-size: 20px;
-    background-color: #ffd05c;
+    font-size: 25px;
+    /* background-color: #ffd05c; */
+    background-image: url('https://img.freepik.com/free-photo/painted-grey-background-with-metal-texture_125540-779.jpg?size=626&ext=jpg');
+    border-radius: 30px;
+    font-weight: bold;
+    margin-left: 20%;
 }
 
 .know-more-title{
@@ -21,16 +25,15 @@
     padding-bottom: 5%;
 }
 
-.know-more-card{
+/* .know-more-card{
     display: grid;
     grid-template-columns: 50% 50%;
     column-gap: 10px;
     row-gap: 1em;
-    background-color: white;
-}
+} */
 
-@media screen and (max-width: 900px){
+/* @media screen and (max-width: 900px){
     .know-more-card{
         display: unset;
     }
-}
+} */

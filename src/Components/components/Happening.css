@@ -1,0 +1,47 @@
+.individual-article{
+    width: 70%;
+    margin: 10% 20% 0;
+    background-color: #F9A826;
+    padding: 0 0 100px 0;
+}
+
+.individual-article-background{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    position: relative;
+}
+
+.individual-article-left{
+    background-color: white;
+    grid-column: 1 / 3;
+    grid-row: 1/5;
+    display: flex;
+}
+
+.individual-article-heading{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.individual-article-content{
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 20px;
+    margin: 5% auto;
+    padding: 25% 10% 10%;
+}
+
+.individual-article-right{
+    /* background: url('https://post.healthline.com/wp-content/uploads/2019/03/vitamins-for-kids-1200x628-facebook.jpg'); */
+    background-position: center;
+    background-size: cover;
+    grid-column: 3;
+    grid-row: 1/5;
+}

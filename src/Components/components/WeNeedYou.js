@@ -35,13 +35,15 @@ const WeNeedYou = () => {
     const classes = useStyles();
     return (
         <div className="weNeedYou">
+            <h3 className="weNeedYouHeading">Become a Volunteer</h3>
             <Accordion expanded={expandedPanel === 'panel1'} onChange={handleAccordionChange('panel1')} className={classes.root}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
+
                 >
-                    <Typography>Why an NGO?</Typography>
+                    <Typography >Why an NGO?</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
