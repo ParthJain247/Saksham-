@@ -1,91 +1,198 @@
-import React from 'react'
-import './NavigationBar.css'
-import { AiFillHome } from 'react-icons/ai';
-import { FaUserAlt } from 'react-icons/fa';
-import { SiHackhands } from 'react-icons/si';
-import { SiCampaignmonitor } from 'react-icons/si';
-import { RiTeamFill } from 'react-icons/ri';
-import { RiContactsFill } from 'react-icons/ri';
-import { BiNews } from 'react-icons/bi';
-import { BsCardImage } from 'react-icons/bs';
-import Sidebar from './Nav/Nav';
+import React from "react";
+import "./NavigationBar.css";
+import { Link } from "react-router-dom";
+import { AiFillHome } from "react-icons/ai";
+import { FaUserAlt } from "react-icons/fa";
+import { SiHackhands } from "react-icons/si";
+import { SiCampaignmonitor } from "react-icons/si";
+import { RiTeamFill } from "react-icons/ri";
+import { RiContactsFill } from "react-icons/ri";
+import { BiNews } from "react-icons/bi";
+import { BsCardImage } from "react-icons/bs";
+import Sidebar from "./Nav/Nav";
 import { useHistory } from "react-router-dom";
+import logo from "./static/images/navbar-logo.png";
 
 function NavigationBar() {
-const history = useHistory();
-function onClick(e, item) {
-    history.push('/' + item.name)
-}
+  const history = useHistory();
+  function onClick(e, item) {
+    history.push("/" + item.name);
+  }
 
-
-
-const items = [
-    { name: "", label: "Home",Icon: AiFillHome, onClick },
-    "divider",
+  const items = [
     {
-        name: "About-us",
-        label: "About Us",
-        Icon: FaUserAlt,
-        items: [
-            { name: "WhySaksham", label: "Why Saksham", onClick },
-            { name: "Journey", label: "Journey", onClick },
-            { name: "Messages", label: "Messages", onClick },
-        ]
+      name: "",
+      label: "Home",
+      //  Icon: AiFillHome,
+      onClick,
     },
     "divider",
     {
-        name: "Our-works",
-        label: "Our works",
-        Icon: SiHackhands,
-        items: [
+      name: "About-us",
+      label: "About Us",
+      // Icon: FaUserAlt,
+      items: [
+        { name: "WhySaksham", label: "Why Saksham", onClick },
+        { name: "Journey", label: "Journey", onClick },
+        { name: "Messages", label: "Messages", onClick },
+      ],
+    },
+    "divider",
+    {
+      name: "Our-works",
+      label: "Works",
+      //   Icon: SiHackhands,
+      items: [
         { name: "Hunger", label: "Hunger", onClick },
         { name: "Poverty", label: "Poverty", onClick },
         { name: "Health", label: "Health", onClick },
         { name: "Education", label: "Education", onClick },
         { name: "WomenEmpowerment", label: "Women Empowerment", onClick },
-        ]
+      ],
     },
     "divider",
     {
-        name: "Campaigns",
-        label: "Campaigns",
-        Icon: SiCampaignmonitor,
-        items: [
+      name: "Campaigns",
+      label: "Campaigns",
+      //   Icon: SiCampaignmonitor,
+      items: [
         { name: "Campaign1", label: "Campaign1", onClick },
         { name: "Campaign2", label: "Campaign2", onClick },
         { name: "Campaign3", label: "Campaign3", onClick },
-        ]
+      ],
     },
     "divider",
-    { name: "Happenings", label: "Happenings", Icon: BiNews , onClick },
-    "divider",
-    { name: "Gallary", label: "Media Center", Icon: BsCardImage , onClick },
-    "divider",
-    { 
-        name: "Join-us", 
-        label: "Get Involved", 
-        Icon: RiTeamFill ,
-        items: [
-            { name: "Individual", label: "Individual" , onClick },
-            { name: "Corporate", label: "Corporate Partnership", onClick },
-            { name: "School", label: "School", onClick },
-        ]
+    {
+      name: "Happenings",
+      label: "Happenings",
+      //  Icon: BiNews,
+      onClick,
     },
     "divider",
-    { name: "Contact", label: "Contact Us", Icon: RiContactsFill , onClick },
-    "divider"
-];
+    {
+      name: "Gallary",
+      label: "Gallery",
+      //  Icon: BsCardImage,
+      onClick,
+    },
+    "divider",
+    {
+      name: "Join-us",
+      label: "Join Up",
+      //   Icon: RiTeamFill,
+      items: [
+        { name: "Individual", label: "Individual", onClick },
+        { name: "Corporate", label: "Corporate Partnership", onClick },
+        { name: "School", label: "School", onClick },
+      ],
+    },
+    "divider",
+    {
+      name: "Contact",
+      label: "Contact Us",
+      //  Icon: RiContactsFill,
+      onClick,
+    },
+    "divider",
+  ];
 
-
-    return (
-        <div className="NavigationBar">
-            <img src="/images/logo-white.png" alt="Logo" />
-            <div className="list-links"> 
-                <Sidebar items={items} />
-            </div>
-            <h1>© Saksham A Helping Hand Foundation.</h1>
+  return (
+    <div className="NavigationBar">
+      <img src={logo} alt="Logo" />
+      <div class="navbar">
+        <Link to="/">
+          <a href="">Home</a>
+        </Link>
+        <div class="dropdown">
+          <a href="">About Us</a>
+          <div class="dropdown-content">
+            <Link to="/WhySaksham">
+              <a href="">Why Saksham</a>
+            </Link>
+            <br />
+            <br />
+            <Link to="/Journey">
+              <a href="">Journey</a>
+            </Link>
+            <br />
+            <br />
+            <Link to="/Messages">
+              <a href="">Messages</a>
+            </Link>
+          </div>
         </div>
-    )
+
+        <div class="dropdown">
+          <a href="">Works</a>
+          <div class="dropdown-content">
+            <Link to="/Hunger">
+              <a href="">Hunger</a>
+            </Link>
+            <br />
+            <br />
+            <Link to="/Poverty">
+              <a href="">Poverty</a>
+            </Link>
+            <br />
+            <br />
+            <Link to="/Health">
+              <a href="">Health</a>
+            </Link>
+            <br />
+            <br />
+            <Link to="/Education">
+              <a href="">Education</a>
+            </Link>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="">Campaigns</a>
+          <div class="dropdown-content">
+            <Link to="/Campaign1">
+              <a href="">Campaign 1</a>
+            </Link>
+            <br />
+            <br />
+            <Link to="/Campaign2">
+              <a href="">Campaign 2</a>
+            </Link>
+            <br />
+            <br />
+            <Link to="/Campaign3">
+              <a href="">Campaign 3</a>
+            </Link>
+          </div>
+        </div>
+        <a href="">Happenings</a>
+        <Link to="/Gallary">
+          <a href="">Gallery</a>
+        </Link>
+        <div class="dropdown">
+          <a href="">Join Up</a>
+          <div class="dropdown-content">
+            <Link to="/Individual">
+              <a href="">Individual</a>
+            </Link>
+            <br />
+            <br />
+            <a href="">Corporate Partnership</a>
+            <br />
+            <br />
+            <Link to="/School">
+              <a href="">School</a>
+            </Link>
+          </div>
+        </div>
+        <Link to="/Contact">
+          <a href="">Contact Us</a>
+        </Link>
+      </div>
+      {/* <div className="list-links">
+        <Sidebar items={items} />
+      </div> */}
+      {/* <h1>© Saksham A Helping Hand Foundation.</h1> */}
+    </div>
+  );
 }
 
-export default NavigationBar
+export default NavigationBar;
