@@ -102,7 +102,7 @@ const ContactUsForm = () => {
                                             aria-label="minimum height"
                                             minRows={6}
                                             placeholder="Message"
-                                            style={{ width: '70%' }}
+                                            style={{ width: '70%', backgroundColor: '#ffd05c' }}
                                             onChange={e => setMessage(e.target.value)}
                                         />
                                     </div>
