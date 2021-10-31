@@ -5,7 +5,7 @@ const KnowMoreCard = ({ heading, content, color }) => {
         <div className="individual-card">
             <div className="card-content">
                 <h4 className="know-more-heading">{heading}</h4>
-                <p>{content}</p>
+                <p className="know-more-card-content">{content}</p>
             </div>
         </div>
     )

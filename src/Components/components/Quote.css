@@ -1,7 +1,9 @@
 .quote{
     padding: 10%;
-    background: linear-gradient( #ffd05c, #2a0944);
+    background: url('https://cdn.adf.org.au/media/images/crowded-street-yellow.2e16d0ba.fill-1524x683.jpg');
+    /* background: linear-gradient( #ffd05c, #2a0944); */
     color: white;
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: bold;
     font-style: italic;
 }

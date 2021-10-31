@@ -1,6 +1,25 @@
+.main-school-form-section{
+    background-color: #511c7a;
+}
+
+.join-us-school-form{
+    text-align: center;
+    color: white;
+    padding-top: 3%;
+}
+
+.schoolFormContainerText{
+    line-height: 35px;
+    letter-spacing: 1.2px;
+    padding: 7% 7% 20%;
+    color: white;
+}
+
 .schoolForm{
-    background: linear-gradient(180deg,#ffd05c, white);
     padding: 10% 0;
+    background-image: url("indi.png");
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
 }
 
 .schoolFormContainer{
@@ -9,16 +28,12 @@
     padding: 10px;
     align-items: center;
     text-align: center;
-    background-color: white;
     border-radius: 20px;
 }
 
 .schoolFormContainerHeader{
     padding: 5% 0;
-}
-
-.schoolFormContainerText{
-    padding: 0 7% 5%;
+    color: white;
 }
 
 .FormGroupContainer{
@@ -30,4 +45,12 @@
     padding: 6% 16%;
     color: gray;
     font-weight: 800;
+}
+
+.tf1{
+    padding: 10px;
+}
+
+.MuiInput-root {
+    padding: 10px;
 }

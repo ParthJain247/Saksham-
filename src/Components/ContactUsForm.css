@@ -1,13 +1,29 @@
+.contact-us-form{
+    background-color: #511c7a;
+}
+
 .ContactUsFormSection{
     text-align: center;
     padding: 5%;
-    background: linear-gradient(180deg,#ffd05c, white);
-    color: black;
+    color: white;
     letter-spacing: 1.5px;
+    background-image: url("indi.png");
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
 }
 
+.get-in-touch{
+    text-align: center;
+    color: white;
+    padding: 3% 0 0;
+}
+
+/* .newimg{
+    position: absolute;
+} */
+
 .contact-us-form-container{
-    background-color: white;
+    /* background-color: white; */
     margin: 12% 12%;
     padding: 7%;
     border-radius: 20px;
@@ -18,7 +34,8 @@
 }
 
 .contact-us-para{
-    padding: 0 5% 5%;
+    color: white;
+    padding: 10% 10% 5%;
 }
 
 .contact-form-group{
@@ -34,4 +51,15 @@
 
 .MuiTextField-root{
     width: 70%;
+    background-color: orchid;
+    border-radius: 20px;
+}
+
+.MuiTextField-root::before{
+    border-bottom: none;
+}
+
+.MuiTextField-root > label {
+    background-color: 'red';
+    color: 'red';
 }

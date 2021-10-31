@@ -4,3 +4,13 @@
     /* background-color: rgb(39, 9, 95); */
 }
 
+.MuiAccordion-root{
+    background-color: blueviolet;
+    color: white;
+}
+
+.weNeedYouHeading{
+    font-size: 30px;
+    text-align: center;
+    margin: 7%;
+}
