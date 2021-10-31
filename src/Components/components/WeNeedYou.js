@@ -9,10 +9,9 @@ import { createStyles, makeStyles } from '@mui/styles';
 import './WeNeedYou.css'
 import React, { useState } from 'react';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     root: {
-        background: "linear-gradient(45deg, #ffd05c 30%, #eef2f3 90%)",
-        border: "3px solid white",
+        background: "linear-gradient(45deg, #F9A826 30%, #F9A826 90%)",
         color: 'white',
         borderRadius: "50px",
         height: "auto",
@@ -21,7 +20,7 @@ const useStyles = makeStyles({
         fontSize: '25px',
     },
 
-});
+}));
 
 
 
@@ -35,13 +34,15 @@ const WeNeedYou = () => {
     const classes = useStyles();
     return (
         <div className="weNeedYou">
+            <h3 className="weNeedYouHeading">Become a Volunteer</h3>
             <Accordion expanded={expandedPanel === 'panel1'} onChange={handleAccordionChange('panel1')} className={classes.root}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
+
                 >
-                    <Typography>Why an NGO?</Typography>
+                    <Typography >Why an NGO?</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
