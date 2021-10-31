@@ -1,4 +1,5 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Homepage from "./Components/Homepage";
 import NavigationBar from "./Components/NavigationBar";
@@ -218,9 +219,7 @@ function App() {
           </Route>
           <Route path="/Individual">
             <div className="content-app">
-              <Container className="indi-donation" fluid>
-                <Form />
-              </Container>
+              <Form />
             </div>
           </Route>
           <Route path="/Contact">

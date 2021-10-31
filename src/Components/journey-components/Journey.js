@@ -8,7 +8,7 @@ import {
 } from "react-vertical-timeline-component";
 const Journey = () => {
   const [size, setSize] = useState(window.innerWidth);
-  const [big, setBig] = useState(false);
+  const [isBig, setIsBig] = useState(false);
 
   const checkSize = () => {
     setSize(window.innerWidth);
@@ -16,21 +16,21 @@ const Journey = () => {
   useEffect(() => {
     window.addEventListener("resize", checkSize);
     if (size > 1600) {
-      setBig(true);
+      setIsBig(true);
     } else {
-      setBig(false);
+      setIsBig(false);
     }
     return () => {
       window.removeEventListener("resize", checkSize);
     };
-  });
+  }, [size]);
   return (
     <>
       <div className="Journey-page">
         <div className="heading">
           <h1 className="title">Journey</h1>
         </div>
-        {!big && (
+        {!isBig && (
           <VerticalTimeline layout="1-column-left" className="journey-timeline">
             {elements.map((element) => {
               return (
@@ -59,7 +59,7 @@ const Journey = () => {
             })}
           </VerticalTimeline>
         )}
-        {big && (
+        {isBig && (
           <VerticalTimeline layout="2-columns">
             {elements.map((element) => {
               return (
