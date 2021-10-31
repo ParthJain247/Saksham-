@@ -100,91 +100,91 @@ function NavigationBar() {
     <div className="NavigationBar">
       <img src={logo} alt="Logo" />
       <div class="navbar">
-        <Link to="/">
-          <a href="">Home</a>
+        <Link style={{ textDecoration: "none" }} to="/">
+          <h6>Home</h6>
         </Link>
         <div class="dropdown">
-          <a href="">About Us</a>
+          <h6 href="">About Us</h6>
           <div class="dropdown-content">
             <Link to="/WhySaksham">
-              <a href="">Why Saksham</a>
+              <h6 href="">Why Saksham</h6>
             </Link>
             <br />
             <br />
             <Link to="/Journey">
-              <a href="">Journey</a>
+              <h6 href="">Journey</h6>
             </Link>
             <br />
             <br />
             <Link to="/Messages">
-              <a href="">Messages</a>
+              <h6 href="">Messages</h6>
             </Link>
           </div>
         </div>
 
         <div class="dropdown">
-          <a href="">Works</a>
+          <h6 href="">Works</h6>
           <div class="dropdown-content">
             <Link to="/Hunger">
-              <a href="">Hunger</a>
+              <h6 href="">Hunger</h6>
             </Link>
             <br />
             <br />
             <Link to="/Poverty">
-              <a href="">Poverty</a>
+              <h6 href="">Poverty</h6>
             </Link>
             <br />
             <br />
             <Link to="/Health">
-              <a href="">Health</a>
+              <h6 href="">Health</h6>
             </Link>
             <br />
             <br />
             <Link to="/Education">
-              <a href="">Education</a>
+              <h6 href="">Education</h6>
             </Link>
           </div>
         </div>
         <div class="dropdown">
-          <a href="">Campaigns</a>
+          <h6 href="">Campaigns</h6>
           <div class="dropdown-content">
             <Link to="/Campaign1">
-              <a href="">Campaign 1</a>
+              <h6 href="">Campaign 1</h6>
             </Link>
             <br />
             <br />
             <Link to="/Campaign2">
-              <a href="">Campaign 2</a>
+              <h6 href="">Campaign 2</h6>
             </Link>
             <br />
             <br />
             <Link to="/Campaign3">
-              <a href="">Campaign 3</a>
+              <h6 href="">Campaign 3</h6>
             </Link>
           </div>
         </div>
-        <a href="">Happenings</a>
-        <Link to="/Gallary">
-          <a href="">Gallery</a>
+        <h6 href="">Happenings</h6>
+        <Link style={{ textDecoration: "none" }} to="/Gallary">
+          <h6 href="">Gallery</h6>
         </Link>
         <div class="dropdown">
-          <a href="">Join Up</a>
+          <h6 href="">Join Up</h6>
           <div class="dropdown-content">
             <Link to="/Individual">
-              <a href="">Individual</a>
+              <h6 href="">Individual</h6>
             </Link>
             <br />
             <br />
-            <a href="">Corporate Partnership</a>
+            <h6 href="">Corporate Partnership</h6>
             <br />
             <br />
             <Link to="/School">
-              <a href="">School</a>
+              <h6 href="">School</h6>
             </Link>
           </div>
         </div>
-        <Link to="/Contact">
-          <a href="">Contact Us</a>
+        <Link style={{ textDecoration: "none" }} to="/Contact">
+          <h6 href="">Contact Us</h6>
         </Link>
       </div>
       {/* <div className="list-links">
