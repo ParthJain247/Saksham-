@@ -1,15 +1,16 @@
-.container.gallery-container {
-  background-color: #fff;
-  color: #35373a;
-  min-height: 100vh;
-  padding: 30px 50px;
+.gallery-page {
+  background-color: #000;
 }
 
-.gallery-container h1 {
-  text-align: center;
-  margin-top: 50px;
+.gallery-page h1 {
+  color: white;
   font-family: "Droid Sans", sans-serif;
   font-weight: bold;
+  padding-top: 12.5%;
+  padding-left: 25%;
+}
+.gallery-container {
+  color: #35373a;
 }
 
 .gallery-container p.page-description {
@@ -20,7 +21,7 @@
 }
 
 .tz-gallery {
-  padding: 40px;
+  padding: 1em;
 }
 
 /* Override bootstrap column paddings */
@@ -30,7 +31,8 @@
 
 .tz-gallery .lightbox img {
   width: 100%;
-  border-radius: 0;
+  border-radius: 1em;
+  padding: 0.5em;
   position: relative;
 }
 
