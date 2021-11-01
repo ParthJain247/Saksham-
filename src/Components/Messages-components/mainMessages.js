@@ -10,7 +10,9 @@ import "swiper/components/navigation/navigation.min.css";
 import "swiper/components/pagination/pagination.min.css";
 
 SwiperCore.use([Autoplay, Navigation]);
-
+if(window.location.pathname==="/Messages"){
+        document.body.style.background="#F9A826";
+    }
 const MainMessages = () => {
   return (
     <div className="Msg-page">

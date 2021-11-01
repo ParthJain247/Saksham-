@@ -1,0 +1,55 @@
+.footer_sec{
+    height: 55vh;
+    width: 100%;
+    background-color: #2A0944;
+    display: flex;
+    justify-content: flex-end;
+    padding: 4.5% 0;
+}
+
+.footer_sec>figure{
+    width: 20%;
+    height: 90%;
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 3%;
+}
+
+.footer_sec>figure>figcaption{
+    font-size: 180%;
+    letter-spacing: 2px;
+    /* someone else is using positing absolute for figcaption in another component. 
+    to make it default, static is being used here */
+    position: static; 
+}
+
+.footer_sec>figure>button{
+    color: #2A0944;
+    box-shadow: 7px 5px black;
+    font-size: 120%;
+}
+
+.footer_sec>figure:first-of-type{
+    padding-top: 5.2%;
+}
+
+
+@media screen and (max-width: 1000px){
+    .footer_sec>figure{
+        font-size: 103%;
+    }
+    .footer_sec{
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width: 480px){
+    .footer_sec{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .footer_sec>figure{
+        width: 52%;
+    }
+
+}

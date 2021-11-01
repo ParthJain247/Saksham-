@@ -180,6 +180,8 @@ const IndividualForm = () => {
       followSub[i].classList.toggle("follow-slide-in");
     }
   };
+  // #2A0944
+  document.body.style.background="#2A0944";
   return (
     <div className="individual-form-page">
       <div className="individual-intro">

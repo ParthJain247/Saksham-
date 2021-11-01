@@ -1,14 +1,20 @@
+.our-works-facts{
+    background-color: rgb(163, 47, 105);
+    color: white;
+}
+
 .facts{
-    display: grid;
-    grid-template-columns: 30% 70%;
     margin: 5% 3% 10%;
+    padding:5% 0 5% 12%;
+    letter-spacing: 1.5px;
     justify-content: center;
 }
 
 .our-works-facts > h3{
     font-size: 40px;
-    color: #2a0944,;
+    color: white,;
     text-transform: uppercase;
+    padding-top: 5%;
 }
 
 img{

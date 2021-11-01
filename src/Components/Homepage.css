@@ -1,5 +1,21 @@
+:root{
+    font-size:calc(50% + 0.5vw);
+}
 .Homepage{
+    margin: 0;
     display: flex;
     flex-direction: column;
+    width: 80%;
+    margin-left: 20%;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-width: 0;
+    text-align: justify;
 }
 
+@media screen and (max-width: 1000px){
+    .Homepage{
+        width: 100%;
+        margin-left: 0;
+    }
+}

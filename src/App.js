@@ -8,11 +8,12 @@ import Health from "./Components/Health";
 import CampaignsPage from "./Components/campaign";
 import SchoolForm from "./Components/SchoolForm";
 import ContactUsForm from "./Components/ContactUsForm";
-import { Container } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 import Form from "./Components/individual-forms/IndividualForm";
 import Gallery from "./Components/gallery";
 import Journey from "./Components/journey-components/Journey";
 import MainMessages from "./Components/Messages-components/mainMessages";
+import Happenings from './Components/Happenings'
 
 function App() {
   const text =
@@ -225,6 +226,9 @@ function App() {
             <div className="content-app">
               <ContactUsForm />
             </div>
+          </Route>
+          <Route path="/Happenings">
+            <Happenings />
           </Route>
           <Route path="/">
             <Homepage />
