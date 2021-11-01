@@ -1,8 +1,8 @@
 .whySakshamPage{
     text-align: center;
     color: white;
-    line-height: 35px;
-    font-size: 18px;
+    line-height: 55px;
+    font-size: 28px;
 }
 
 .why-saksham-heading{
@@ -38,6 +38,7 @@
     padding: 10% 10%;
     background: url('https://st3.depositphotos.com/4881653/16065/v/950/depositphotos_160659084-stock-illustration-happy-family-cartoon-vector-illustration.jpg');
     background-repeat: no-repeat;
+    background-size:cover;
     background-position: center;
     color: black;
     clip-path: polygon(0 30%, 32% 0, 100% 0, 100% 100%, 29% 100%, 0 70%);
@@ -63,6 +64,7 @@
 
 .sakshamObjective{
     background: url('https://images.unsplash.com/photo-1603086694471-569df969973b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dGFrZSUyMG15JTIwaGFuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80');
+    background-size:cover;
     padding: 10% 10%;
     margin: 10% 0;
     border-radius: 30px;
@@ -70,6 +72,11 @@
 
 .sakshamObjective > img{
     transform: scale(0.7);
+}
+
+.whoWeAreHeading{
+    font-size: 60px;
+    padding-bottom: 7%;
 }
 
 .whoweareimage{

@@ -16,7 +16,7 @@ const theme = createTheme({
                     props: { variant: 'standard' },
                     style: {
                         textTransform: 'none',
-                        backgroundColor: '#ffd05c',
+                        backgroundColor: '#f9a826',
                         border: 'none',
                         '& :before': {
                             borderBottom: 'none'
@@ -71,7 +71,6 @@ const ContactUsForm = () => {
                                     <div className="contact-form-group" >
 
                                         <TextField
-                                            className="tf"
                                             InputLabelProps={{ style: { paddingLeft: '30px' } }}
                                             id="demo-helper-text-aligned"
                                             label="Name"
@@ -102,13 +101,13 @@ const ContactUsForm = () => {
                                             aria-label="minimum height"
                                             minRows={6}
                                             placeholder="Message"
-                                            style={{ width: '70%', backgroundColor: '#ffd05c' }}
+                                            style={{ width: '70%', backgroundColor: '#f9a826' }}
                                             onChange={e => setMessage(e.target.value)}
                                         />
                                     </div>
                                     <Button
                                         style={{
-                                            backgroundColor: '#ffd05c',
+                                            backgroundColor: '#f9a826',
                                             color: '#2a0944',
                                             width: '50%',
                                             padding: '2%',

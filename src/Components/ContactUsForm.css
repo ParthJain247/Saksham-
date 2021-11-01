@@ -1,5 +1,5 @@
 .contact-us-form{
-    background-color: #511c7a;
+    background-color: #f9a826;
 }
 
 .ContactUsFormSection{
@@ -16,11 +16,9 @@
     text-align: center;
     color: white;
     padding: 3% 0 0;
+    font-size: 42px;
 }
 
-/* .newimg{
-    position: absolute;
-} */
 
 .contact-us-form-container{
     /* background-color: white; */
@@ -36,22 +34,16 @@
 .contact-us-para{
     color: white;
     padding: 10% 10% 5%;
+    text-align: center;
+    font-size: 30px;
 }
 
 .contact-form-group{
     padding:20px;
 }
 
-/* .contact-form-body{
-    background-color: white;
-    margin: 7% 12%;
-    padding: 7%;
-    border-radius: 20px;
-}  */
-
 .MuiTextField-root{
     width: 70%;
-    background-color: orchid;
     border-radius: 20px;
 }
 
@@ -63,3 +55,9 @@
     background-color: 'red';
     color: 'red';
 }
+
+@media only screen and (max-width: 1000px) {
+    .contact-us-para{
+        margin-left: 20%;
+    }
+  }
