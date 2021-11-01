@@ -5,11 +5,12 @@
     padding: 30px;
     border-radius: 10px;
     line-height: 40px;
+    font-size: 20px;
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
 }
 
 .know-more-heading{
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .individual-card:hover{

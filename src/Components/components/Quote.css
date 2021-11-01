@@ -1,6 +1,7 @@
 .quote{
     padding: 10%;
     background: url('https://cdn.adf.org.au/media/images/crowded-street-yellow.2e16d0ba.fill-1524x683.jpg');
+    background-size: cover;
     /* background: linear-gradient( #ffd05c, #2a0944); */
     color: white;
     font-size: 40px;
@@ -9,7 +10,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .quote{
+    .quote-text{
         margin-left: 20%;
     }
   }
