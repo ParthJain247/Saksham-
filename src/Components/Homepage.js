@@ -1,26 +1,23 @@
-import React from 'react'
-import FrontAboutUs from './Homepage/FrontAboutUs';
-import Front from './Homepage/Front';
-import './Homepage.css'
-import FrontWorks from './Homepage/FrontWorks';
-import FrontCampaign from './Homepage/FrontCampaign';
+import Front from "./Homepage/Front"
+import Front_help from "./Homepage/Front_help"
+import Front_aboutUs from "./Homepage/Front_aboutUs"
+import Front_ethics from "./Homepage/Front_ethics"
+import Front_campaign from "./Homepage/Front_campaign"
+import Front_footer from "./Homepage/Front_footer"
+import "./Homepage.css"
 
-function Homepage() {
-    return (
-        <div className="Homepage" >
-            <div className="1">
-                <Front />
-            </div>
-            <div className="2">
-                <FrontAboutUs />
-            </div>
-            <div className="3">
-                <FrontWorks />
-            </div>
-            <div className="4">
-                <FrontCampaign />
-            </div>
+function Homepage(){
+    return(
+        <>
+        <div className="Homepage">
+           <Front/>
+           <Front_help/>
+           <Front_aboutUs/>
+           <Front_ethics/>
+           <Front_campaign/>
+           <Front_footer/>
         </div>
+        </>
     )
 }
 

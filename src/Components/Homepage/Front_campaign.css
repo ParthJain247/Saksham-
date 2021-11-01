@@ -1,0 +1,116 @@
+.campaign-sec{
+    height: 84vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3b185f;
+}
+.campaign-sec h2{
+    font-size: 240%;
+}
+
+.camp_figures{
+    height: 76%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5%;
+}
+
+.camp_figures>figure{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border-radius: 50px;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.363);
+    padding-top: 1%;
+}
+.camp_figures>figure>img{
+    height: 55%;
+    width: 90%;
+    border-radius: 50px;
+    padding-top: 2.4%;
+}
+
+.progBar_cont{
+    height: 4%;
+    width: 90%;
+    border: 4px double #3b185f;
+    background-color: white;
+    border-radius: 30px;
+    margin: 4.5% 0;
+}
+
+.progBar{
+    height: 100%;
+    width: 30%;
+    background-color: #3b185f;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.donation_deets{
+    height: 14%;
+    width: 90%;
+}
+.donation_deets>header,
+.donation_deets>div{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.donation_deets>header{
+    font-size: 120%;
+}
+.donation_deets>div>h3{
+    display: inline-block;
+    height: 100%;
+    font-size: 144%;
+}
+.camp_figures>figure>button{
+    margin-top: 6%;
+    font-size: 107%;
+}
+
+
+@media screen and (max-width:1000px){
+    .campaign-sec{
+        height: 95vh;
+    }
+    .campaign-sec h2{
+        font-size: 300%;
+    }
+    .camp_figures{
+        width: 90%
+    }
+}
+@media screen and (max-width:710px){
+    .campaign-sec{
+        height: 132vh;
+    }
+    .camp_figures{
+        flex-direction: column;
+        align-items: center;
+        height: 90%;
+    }
+    .camp_figures>figure{
+        height: 48%;
+        padding-top: 2%;
+        width: 60%;
+    }
+}
+@media screen and (max-width:510px){
+    .camp_figures>figure{
+        width: 66%;
+    }
+}
+@media screen and (max-width:480px){
+    .campaign-sec{
+        padding-top: 4%;
+    }
+}

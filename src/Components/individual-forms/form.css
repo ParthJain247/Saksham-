@@ -8,6 +8,10 @@
   width: 100%;
 }
 
+.form h3 {
+  color: #fff;
+}
+
 .individual-form-page .individual-form {
   margin-top: 10em;
   background: url("./indi.png");
@@ -235,7 +239,9 @@
 
   .donationRow .individual-collection-button {
     width: 10rem;
-    padding-left: 2rem;
+    height: 6rem;
+    padding: 0.5rem;
+    margin-left: -4em;
   }
 
   .individual-form-page .individual-intro {
@@ -288,6 +294,9 @@
     margin-left: 0em;
   }
 
+  .individual-form .form .donation-form-button {
+    margin-top: 2%;
+  }
   .donationRow .main-donations .individual-donation-button {
     width: 10em;
   }
@@ -314,6 +323,10 @@
 
   .donationRow .main-donations .individual-donation-button {
     width: 10em;
+  }
+
+  .individual-form .form .donation-form-button {
+    margin-top: 2%;
   }
 }
 

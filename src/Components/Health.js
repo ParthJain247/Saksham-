@@ -7,6 +7,10 @@ import KnowMore from './components/KnowMore'
 import KnowMoreCard from './components/KnowMoreCard';
 
 const Health = (props) => {
+    // #420742
+    // if(window.location.pathname==="/Hunger"){
+        document.body.style.background="#420742";
+    // }
     return (
         <div className="our-works-section">
             <Quote quote={props.quote} />

@@ -1,0 +1,259 @@
+.ethics_sec{
+    height: 168vh;
+    width: 100%;
+    background-color: #3B185F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ethics_sec>article{
+    height: 50%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-image: url(); */
+    background-color: rgba(12, 12, 150, 0.651);
+    padding-top: 4%;
+}
+
+.ethics_sec>article>p{
+    width: 80%;
+    font-size: 110%;
+    line-height: 140%;
+    letter-spacing: 1.6px;
+}
+
+.ethics_sec>article>button{
+    width: 22%;
+    height: 7.5%;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #b9377d;
+    color: #b9377d;
+    font-size: 114%;
+}
+.ethics_sec>article>button:hover{
+    border: 2px solid #9e4072;
+    color: #9e4072;
+}
+
+
+
+.donate{
+    height: 44%;
+    width: 60%;
+    background-color: #A12568;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    clip-path: polygon(18% 15%, 82% 15%, 100% 0, 100% 100%, 82% 85%, 18% 85%, 0 100%, 0 0);
+}
+.donate>figure{
+    height: 50%;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.donate>figure>img{
+    height: 55%;
+    border-radius: 50%;
+    box-shadow: 14px 8px rgba(0, 0, 0, 0.473);
+}
+.donate>figure>h3{
+    font-size: 150%;
+}
+
+.donate button{
+    font-size: 106%;
+}
+
+
+.arrows{
+    height: 12%;
+    width: 28%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -109%;
+    z-index: 1;
+}
+
+.arrows>figure{
+    height: 100%;
+    width: 21%;
+    font-size: 110%;
+    background-color: #A12568;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 52% 100%, 0% 65%);
+}
+
+
+
+@media screen and (max-width: 1000px){
+    .ethics_sec{
+        height: 180vh;
+    }
+    .ethics_sec>article{
+        width: 100%;
+    }
+    .ethics_sec>article>p{
+        font-size: 170%;
+    }
+    .donate{
+        width: 100%;
+        height: 48%;
+        clip-path: none;
+    }
+    .arrows{
+        margin-top: -132%;
+    }
+}
+@media screen and (max-width: 980px){
+    .arrows{
+        margin-top: -135%;
+    }
+}
+@media screen and (max-width: 966px){
+    .arrows{
+        margin-top: -140%;
+    }
+}
+@media screen and (max-width: 930px){
+    .arrows{
+        margin-top: -145%;
+    }
+}
+@media screen and (max-width: 896px){
+    .arrows{
+        margin-top: -150%;
+    }
+}
+@media screen and (max-width: 862px){
+    .arrows{
+        margin-top: -155%;
+    }
+}
+@media screen and (max-width: 842px){
+    .arrows{
+        margin-top: -160%;
+    }
+}
+@media screen and (max-width: 816px){
+    .arrows{
+        margin-top: -166%;
+    }
+}
+@media screen and (max-width: 788px){
+    .arrows{
+        margin-top: -172%;
+    }
+}
+@media screen and (max-width: 760px){
+    .arrows{
+        margin-top: -180%;
+    }
+}
+@media screen and (max-width: 728px){
+    .arrows{
+        margin-top: -188%;
+        width: 34%;
+    }
+}
+@media screen and (max-width: 698px){
+    .arrows{
+        margin-top: -195%;
+    }
+}
+@media screen and (max-width: 672px){
+    .arrows{
+        margin-top: -202%;
+    }
+}
+@media screen and (max-width: 644px){
+    .arrows{
+        margin-top: -210%;
+    }
+}
+@media screen and (max-width: 628px){
+    .arrows{
+        margin-top: -218%;
+        width: 38%;
+    }
+}
+@media screen and (max-width: 596px){
+    .arrows{
+        margin-top: -228%;
+    }
+}
+@media screen and (max-width: 576px){
+    .arrows{
+        margin-top: -238%;
+    }
+}
+@media screen and (max-width: 556px){
+    .arrows{
+        margin-top: -247%;
+    }
+}
+@media screen and (max-width: 540px){
+    .arrows{
+        margin-top: -256%;
+        width: 43%;
+    }
+}
+@media screen and (max-width: 524px){
+    .arrows{
+        margin-top: -267%;
+        width: 45%;
+    }
+}
+@media screen and (max-width: 500px){
+    .arrows{
+        margin-top: -273%;
+        width: 47%;
+    }
+}
+@media screen and (max-width: 486px){
+    .arrows{
+        margin-top: -280%;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 480px){
+    .ethics_sec{
+        height: 210vh;
+    }
+    .ethics_sec>article{
+        height: 34%;
+    }
+    .arrows{
+        height: 7%;
+        margin-top: -321%;
+        width: 46%;
+    }
+    .donate{
+        flex-direction: column;
+        padding: 5% 0;
+        height: 66%;
+    }
+    .donate>figure{
+        height: 70%;
+        width: 90%;
+        margin-bottom: 0.6%;
+        justify-content: space-around;
+    }
+    .donate>figure img{
+        width: 48%;
+    }
+    .donate button{
+        width: 24vw;
+        font-size: 140%;
+    }
+}
