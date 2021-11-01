@@ -24,6 +24,9 @@ const Journey = () => {
       window.removeEventListener("resize", checkSize);
     };
   }, [size]);
+  if(window.location.pathname==="/Journey"){
+        document.body.style.background="#F9A826";
+    }
   return (
     <>
       <div className="Journey-page">

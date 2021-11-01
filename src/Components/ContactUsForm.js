@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './ContactUsForm.css'
 import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
-import indiLayout from "./indi.png";
+// import Box from '@mui/material/Box';
+// import indiLayout from "./indi.png";
 import TextField from '@mui/material/TextField';
-import { createStyles, makeStyles } from '@mui/styles';
+// import { createStyles, makeStyles } from '@mui/styles';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import TextareaAutosize from '@mui/material/TextareaAutosize';
 
@@ -43,10 +43,10 @@ const ContactUsForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        // console.log(name)
-        // console.log(email)
-        // console.log(subject)
-        // console.log(message)
+        console.log(name)
+        console.log(email)
+        console.log(subject)
+        console.log(message)
     }
 
     return (

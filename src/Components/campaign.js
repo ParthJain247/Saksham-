@@ -125,6 +125,9 @@ class CampaignsPage extends React.Component {
   }
 
   render() {
+      // if(window.location.pathname==="/WhySaksham"){
+        document.body.style.background="#2A0944";
+      // }
     const {
       name,
       email,

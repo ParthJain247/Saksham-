@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./gallery.css";
 
 const Gallery = (props) => {
+  // #000000
+  document.body.style.background="#000000";
   return (
     <div className="gallery-page">
       <h1>Gallery</h1>

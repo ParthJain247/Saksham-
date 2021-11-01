@@ -14,9 +14,9 @@ const WhySaksham = () => {
                 <h2 className="help-someone-everyday">Help Someone Every Day</h2>
                 <div className="helpSomeoneEverydaySection">
                     <p>Every day, try to help someone who can’t reciprocate your kindness even if it is something small. It is our responsibility to do what we can. As you figure out how to help others it will force you to start thinking in a positive way.
-
+                    
                     The whole mentality revolves around “Serve Humans, Serve Humanity”. So whenever you want to help someone, just look around for the ones who needs the bare minimum and just spread smiles.
-
+                
                     Namita Gaur
                     Founder
                     </p>
