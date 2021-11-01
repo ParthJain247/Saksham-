@@ -20,7 +20,7 @@ const Gallery = (props) => {
                 <img src={props.image} alt="Bridge" />
               </a>
             </div>
-            <div className="col-sm-6 col-md-4">
+            <div className="col-sm-14 col-md-4">
               <a
                 className="lightbox"
                 target="_blank"
@@ -40,7 +40,7 @@ const Gallery = (props) => {
                 </a>
               </div>
             </div>
-            <div className="col-sm-6 col-md-4">
+            <div className="col-sm-6 col-md-4 gallery-1">
               <a
                 className="lightbox"
                 target="_blank"
@@ -60,7 +60,7 @@ const Gallery = (props) => {
                 <img src={props.image} alt="Bridge" />
               </a>
             </div>
-            <div className="col-sm-6 col-md-4">
+            <div className="col-sm-14 col-md-4">
               <a
                 className="lightbox"
                 target="_blank"
@@ -80,7 +80,7 @@ const Gallery = (props) => {
                 <img src={props.image} alt="Bridge" />
               </a>
             </div>
-            <div className="col-sm-6 col-md-4">
+            <div className="col-sm-14 col-md-4">
               <a
                 className="lightbox"
                 target="_blank"
@@ -120,7 +120,7 @@ const Gallery = (props) => {
                 <img src={props.image6} alt="Bridge" />
               </a>
             </div>
-            <div className="col-sm-6 col-md-4">
+            <div className="col-sm-14 col-md-4">
               <a
                 className="lightbox"
                 target="_blank"
@@ -140,7 +140,7 @@ const Gallery = (props) => {
                 <img src={props.image3} alt="Traffic" />
               </a>
             </div>
-            <div className="col-sm-6 col-md-4">
+            <div className="col-sm-14 col-md-4">
               <a
                 className="lightbox"
                 target="_blank"
@@ -181,7 +181,7 @@ const Gallery = (props) => {
                 <img src={props.image7} alt="Park" />
               </a>
             </div>
-            <div className="col-sm-6 col-md-4">
+            <div className="col-sm-14 col-md-4">
               <a
                 className="lightbox"
                 target="_blank"
@@ -191,7 +191,7 @@ const Gallery = (props) => {
                 <img src={props.image8} alt="Tunnel" />
               </a>
             </div>
-            <div className="col-sm-12 col-md-8">
+            <div className="col-sm-14 col-md-8">
               <a
                 className="lightbox"
                 target="_blank"
@@ -201,7 +201,7 @@ const Gallery = (props) => {
                 <img src={props.image9} alt="Traffic" />
               </a>
             </div>
-            <div className="col-sm-6 col-md-4">
+            <div className="col-sm-14 col-md-4">
               <a
                 className="lightbox"
                 target="_blank"
