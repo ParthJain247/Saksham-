@@ -24,7 +24,7 @@ const WhySaksham = () => {
 
             </div>
             <div className="sakshamObjective">
-                <h2>Who We Are</h2>
+                <h2 className="whoWeAreHeading">Who We Are</h2>
                 <div className="whowearetext">
 
                     <p>“Saksham” people always reach where they are needed. we aims that one-day India will get its true Independence, by being free from Hunger, Poverty and Lack of education
