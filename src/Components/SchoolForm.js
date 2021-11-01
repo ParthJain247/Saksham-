@@ -16,7 +16,7 @@ const theme = createTheme({
                     props: { variant: 'standard' },
                     style: {
                         textTransform: 'none',
-                        backgroundColor: '#ffd05c',
+                        backgroundColor: '#f9a826',
                         border: 'none',
                         '& :before': {
                             borderBottom: 'none'
@@ -137,11 +137,12 @@ const SchoolForm = () => {
                             </div>
                             <Button
                                 style={{
-                                    color: '#ffd05c',
+                                    color: '#f9a826',
                                     width: '50%',
                                     padding: '2%',
                                     marginBottom: '7%',
-                                    borderBlockColor: '#ffd05c'
+                                    borderBlockColor: '#f9a826',
+                                    borderWidth: '3px'
                                 }}
                                 onClick={handleSubmit}
                                 size="large"

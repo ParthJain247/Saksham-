@@ -1,11 +1,12 @@
 .main-school-form-section{
-    background-color: #511c7a;
+    background-color: #f9a826;
 }
 
 .join-us-school-form{
     text-align: center;
     color: white;
     padding-top: 3%;
+    font-size: 45px;
 }
 
 .schoolFormContainerText{
@@ -13,6 +14,9 @@
     letter-spacing: 1.2px;
     padding: 7% 7% 20%;
     color: white;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
 }
 
 .schoolForm{
@@ -54,3 +58,9 @@
 .MuiInput-root {
     padding: 10px;
 }
+
+@media only screen and (max-width: 1000px) {
+    .schoolFormContainerText{
+        margin-left: 20%;
+    }
+  }
