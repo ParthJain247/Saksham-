@@ -1,6 +1,7 @@
 .story-component{
     background-color: black;
-    color: white
+    color: white;
+    font-size: 20px;
 }
 
 .short-story{
@@ -20,6 +21,8 @@
 
 .story-title{
     line-height: 50px;
+    font-size: 30px;
+    padding-bottom: 30px;
 }
 
 .story-image{
