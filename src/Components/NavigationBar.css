@@ -1,5 +1,6 @@
 .NavigationBar {
   width: 20vw;
+
   position: fixed;
   z-index: 99;
   display: flex;
@@ -9,10 +10,11 @@
   border-bottom-left-radius: 163px;
   border-bottom-right-radius: 163px;
   color: #fff;
-  padding-bottom: 100px;
+  padding-bottom: 2%;
   max-height: 90vh;
   max-width: 250px;
   min-width: 100px;
+  padding-bottom: 100px;
 }
 
 .NavigationBar > img {
@@ -72,11 +74,20 @@ h6,
   border-radius: 100px;
 }
 
-@media only screen and (max-width: 865px) {
+@media only screen and (max-width: 982px) {
   .NavigationBar > img {
-    width: 5vw;
+    width: 2vw;
     margin: auto;
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  .dropup-content {
+    display: none;
+    z-index: 999;
+  }
+
+  .NavigationBar:hover .dropup-content {
+    display: block;
   }
 }
