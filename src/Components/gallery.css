@@ -4,6 +4,7 @@
 
 .gallery-page h1 {
   color: white;
+  font-size: 6em;
   font-family: "Droid Sans", sans-serif;
   font-weight: bold;
   padding-top: 12.5%;
@@ -11,6 +12,14 @@
 }
 .gallery-container {
   color: #35373a;
+}
+
+.gallery-col-1 {
+  padding: 2em;
+}
+
+.gallery-col-1 .gallery-row-1 {
+  padding: 0 0.7em;
 }
 
 .gallery-container p.page-description {
@@ -31,8 +40,8 @@
 
 .tz-gallery .lightbox img {
   width: 100%;
-  border-radius: 1em;
-  padding: 0.5em;
+  border-radius: 1.5em;
+  padding: 1em;
   position: relative;
 }
 
