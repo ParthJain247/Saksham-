@@ -125,9 +125,9 @@ class CampaignsPage extends React.Component {
   }
 
   render() {
-      // if(window.location.pathname==="/WhySaksham"){
-        document.body.style.background="#2A0944";
-      // }
+    // if(window.location.pathname==="/WhySaksham"){
+    document.body.style.background = "#2A0944";
+    // }
     const {
       name,
       email,
@@ -243,137 +243,133 @@ class CampaignsPage extends React.Component {
               <p>{this.props.imageContent2}</p>
             </div>
           </section> */}
-          <div
-            data-aos="fade-up"
-            // className="card shadow-lg p-3 mt-5  rounded float-left"
-          >
-            <figure className="position-static">
-              {/* <div className="card-header bg-transparent border-0  text-dark text-uppercase">
+
+          <figure className="position-static">
+            {/* <div className="card-header bg-transparent border-0  text-dark text-uppercase">
                 <h3>{this.props.contribution} </h3>
               </div> */}
-              {/* <h1 id="price" className="text-dark">
+            {/* <h1 id="price" className="text-dark">
                 {this.state.data}
               </h1>
               <i class="fas fa-rupee-sign"></i> */}
-              {/* <input
+            {/* <input
                 className="form-control form-rounded "
                 type="text"
                 placeholder=""
                 name="input-price"
                 onChange={this.getData}
               /> */}
-              {/* <br />
+            {/* <br />
 
               <br /> */}
 
-              {/* card-body form-control form-rounded text-light */}
-              <div className="clip">
-                <h3 className="info">{this.props.personal}</h3>
-                <form
-                  action="/"
-                  onSubmit={(e) => this.handleSubmit(e)}
-                  encType="multipart/form-data"
-                  autoComplete="off"
-                >
-                  <div className="form-group">
-                    {/* <label className="mb-0 text-dark">
+            {/* card-body form-control form-rounded text-light */}
+            <div className="clip">
+              <h3 className="info">{this.props.personal}</h3>
+              <form
+                action="/"
+                onSubmit={(e) => this.handleSubmit(e)}
+                encType="multipart/form-data"
+                autoComplete="off"
+              >
+                <div className="form-group">
+                  {/* <label className="mb-0 text-dark">
                       Name : <span className="text-danger"></span>
                     </label> */}
-                    <input
-                      name="name"
-                      type="text"
-                      className="form-control ip"
-                      placeholder="Name"
-                      value={this.state.name}
-                      onChange={this.handleChange}
-                      onBlur={this.handleBlur}
-                    />
-                    {nameError ? (
-                      <div className="alert alert-danger mt-2">
-                        Name is a required field.
-                      </div>
-                    ) : (
-                      ""
-                    )}
-                  </div>
-                  <br />
-                  <div className="form-group">
-                    {/* <label className="mb-0 text-dark">
+                  <input
+                    name="name"
+                    type="text"
+                    className="form-control ip"
+                    placeholder="Name"
+                    value={this.state.name}
+                    onChange={this.handleChange}
+                    onBlur={this.handleBlur}
+                  />
+                  {nameError ? (
+                    <div className="alert alert-danger mt-2">
+                      Name is a required field.
+                    </div>
+                  ) : (
+                    ""
+                  )}
+                </div>
+                <br />
+                <div className="form-group">
+                  {/* <label className="mb-0 text-dark">
                       {" "}
                       Email : <span className="text-danger"></span>
                     </label> */}
-                    <input
-                      name="email"
-                      type="email"
-                      className="form-control ip"
-                      placeholder="Email"
-                      value={this.state.email}
-                      onChange={this.handleChange}
-                      onBlur={this.handleBlur}
-                    />
-                    {emailError ? (
-                      <div className="alert alert-danger mt-2">
-                        Email is a required field.
-                      </div>
-                    ) : (
-                      ""
-                    )}
-                    {emailError2 ? (
-                      <div className="alert alert-danger mt-2">
-                        Email invalid.
-                      </div>
-                    ) : (
-                      ""
-                    )}
-                  </div>
-                  <br />
-                  <div className="form-group">
-                    {/* <label className="mb-0 text-dark">Contact number : </label> */}
+                  <input
+                    name="email"
+                    type="email"
+                    className="form-control ip"
+                    placeholder="Email"
+                    value={this.state.email}
+                    onChange={this.handleChange}
+                    onBlur={this.handleBlur}
+                  />
+                  {emailError ? (
+                    <div className="alert alert-danger mt-2">
+                      Email is a required field.
+                    </div>
+                  ) : (
+                    ""
+                  )}
+                  {emailError2 ? (
+                    <div className="alert alert-danger mt-2">
+                      Email invalid.
+                    </div>
+                  ) : (
+                    ""
+                  )}
+                </div>
+                <br />
+                <div className="form-group">
+                  {/* <label className="mb-0 text-dark">Contact number : </label> */}
 
-                    <input
-                      name="contact"
-                      type="text"
-                      className="form-control ip"
-                      placeholder="Contact"
-                      onChange={this.handleChange}
-                      value={this.state.contact}
-                    />
-                  </div>
-                  <br />
-                  <div className="form-group">
-                    {/* <label className="mb-0 text-dark">
+                  <input
+                    name="contact"
+                    type="text"
+                    className="form-control ip"
+                    placeholder="Contact"
+                    onChange={this.handleChange}
+                    value={this.state.contact}
+                  />
+                </div>
+                <br />
+                <div className="form-group">
+                  {/* <label className="mb-0 text-dark">
                       Message : <span className="text-danger"></span>
                     </label> */}
-                    <textarea
-                      row="4"
-                      name="message"
-                      type="text"
-                      className="form-control ip"
-                      placeholder="Message"
-                      value={this.state.message}
-                      onChange={this.handleChange}
-                      onBlur={this.handleBlur}
-                    />
-                    {messageError ? (
-                      <div className="alert alert-danger mt-2">
-                        Message is a required field.
-                      </div>
-                    ) : (
-                      ""
-                    )}
-                  </div>
-                  <br />
-                  <p className="text-center mb-0">
-                    <input
-                      type="submit"
-                      className="ip-donate"
-                      value="Donate now"
-                    />
-                  </p>
-                </form>
-              </div>
-            </figure>
-          </div>
+                  <textarea
+                    row="4"
+                    name="message"
+                    type="text"
+                    className="form-control ip"
+                    placeholder="Message"
+                    value={this.state.message}
+                    onChange={this.handleChange}
+                    onBlur={this.handleBlur}
+                  />
+                  {messageError ? (
+                    <div className="alert alert-danger mt-2">
+                      Message is a required field.
+                    </div>
+                  ) : (
+                    ""
+                  )}
+                </div>
+                <br />
+                <p className="text-center mb-0">
+                  <input
+                    type="submit"
+                    className="ip-donate"
+                    value="Donate now"
+                  />
+                </p>
+              </form>
+            </div>
+          </figure>
         </div>
       );
       //redirect page to thank the contributed user
