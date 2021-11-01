@@ -1,47 +1,38 @@
-<<<<<<< HEAD
 .whySakshamPage{
     text-align: center;
     color: white;
     line-height: 55px;
     font-size: 28px;
-=======
-.whySakshamPage {
-  text-align: center;
-  color: white;
-  line-height: 35px;
-  font-size: 18px;
->>>>>>> edfe85d934b43357102161ac6c38a91cabe3ef73
 }
 
-.why-saksham-heading {
-  font-size: 40px;
-  padding: 5% 0 0;
-  color: white;
+.why-saksham-heading{
+    font-size: 40px;
+    padding: 5% 0 0;
+    color: white;
 }
 
-.help-someone-everyday {
-  font-size: 35px;
-  font-weight: 800;
-  padding-bottom: 10px;
+.help-someone-everyday{
+    font-size: 35px;
+    font-weight: 800;
+    padding-bottom: 10px;
 }
 
-.sakshampageheader {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  align-items: center;
-  justify-content: center;
-  padding: 5% 10%;
+.sakshampageheader{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 10%; 
 }
 
-.sakshampageheaderimage {
-  border-radius: 50%;
+.sakshampageheaderimage{
+    border-radius: 50%;
 }
 
-.sakshampageheadertext {
-  padding: 5px;
+.sakshampageheadertext{
+    padding: 5px;
 }
 
-<<<<<<< HEAD
 .helpSomeoneEveryday{
     margin-top: 100px;
     padding: 10% 10%;
@@ -51,58 +42,38 @@
     background-position: center;
     color: black;
     clip-path: polygon(0 30%, 32% 0, 100% 0, 100% 100%, 29% 100%, 0 70%);
-=======
-.helpSomeoneEveryday {
-  margin-top: 100px;
-  padding: 10% 10%;
-  /* background-color: #2a0944; */
-  background: url('https://st3.depositphotos.com/4881653/16065/v/950/depositphotos_160659084-stock-illustration-happy-family-cartoon-vector-illustration.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  color: black;
-  clip-path: polygon(0 30%, 32% 0, 100% 0, 100% 100%, 29% 100%, 0 70%);
->>>>>>> edfe85d934b43357102161ac6c38a91cabe3ef73
 }
 
-.helpSomeoneEverydaySection {
-  align-items: center;
+.helpSomeoneEverydaySection{
+    align-items: center;
 }
 
-.helpSomeoneEverydaySection > img {
-  order: 2;
-  width: 100%;
-  border-radius: 20px;
+.helpSomeoneEverydaySection > img{
+    order: 2;
+    width: 100%;
+    border-radius: 20px;
 }
 
-.helpSomeoneEverydaySection > p {
-  padding: 5%;
+.helpSomeoneEverydaySection > p{
+    padding: 5%;
 }
 
 /* .helpSomeoneEveryday > img{
     transform: scale(0.7);
 } */
 
-<<<<<<< HEAD
 .sakshamObjective{
     background: url('https://images.unsplash.com/photo-1603086694471-569df969973b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dGFrZSUyMG15JTIwaGFuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80');
     background-size:cover;
     padding: 10% 10%;
     margin: 10% 0;
     border-radius: 30px;
-=======
-.sakshamObjective {
-  background: url("https://images.unsplash.com/photo-1603086694471-569df969973b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dGFrZSUyMG15JTIwaGFuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
-  padding: 10% 10%;
-  margin: 10% 0;
-  border-radius: 30px;
->>>>>>> edfe85d934b43357102161ac6c38a91cabe3ef73
 }
 
-.sakshamObjective > img {
-  transform: scale(0.7);
+.sakshamObjective > img{
+    transform: scale(0.7);
 }
 
-<<<<<<< HEAD
 .whoWeAreHeading{
     font-size: 60px;
     padding-bottom: 7%;
@@ -110,20 +81,17 @@
 
 .whoweareimage{
     border-radius: 20px;
-=======
-.whoweareimage {
-  border-radius: 20px;
->>>>>>> edfe85d934b43357102161ac6c38a91cabe3ef73
 }
 
-@media screen and (max-width: 700px) {
-  .sakshampageheader {
-    grid-template-columns: 100%;
-  }
-  .sakshampageheaderimage {
-    grid-row: 2;
-  }
-  .helpSomeoneEverydaySection {
-    display: unset;
-  }
+
+@media screen and (max-width: 700px){
+    .sakshampageheader{
+        grid-template-columns: 100%;
+    }
+    .sakshampageheaderimage{
+        grid-row: 2;
+    }
+    .helpSomeoneEverydaySection{
+        display: unset;
+    }
 }
