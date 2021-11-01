@@ -1,16 +1,19 @@
 .NavigationBar {
-  height: 48vw;
   width: 20vw;
+
   position: fixed;
   z-index: 99;
   display: flex;
   flex-direction: column;
-
   background-color: rgba(42, 9, 68, 1);
   box-shadow: 45px 4px 4px rgba(0, 0, 0, 0.25);
   border-bottom-left-radius: 163px;
   border-bottom-right-radius: 163px;
   color: #fff;
+  padding-bottom: 2%;
+  max-height: 90vh;
+  max-width: 250px;
+  min-width: 100px;
 }
 
 .NavigationBar > img {
@@ -18,6 +21,8 @@
   margin: auto;
   margin-top: 2.5vh;
   margin-bottom: 5vh;
+  min-width: 80px;
+  max-width: 150px;
 }
 
 .navbar {
@@ -47,7 +52,7 @@ h6,
 .dropdown-content h6 {
   font-family: Montserrat;
   font-style: normal;
-  font-size: 2.4vw;
+  font-size: min(2.4vw, 5vh, 30px);
   color: white;
   font-weight: normal;
   text-decoration: none;
@@ -68,11 +73,20 @@ h6,
   border-radius: 100px;
 }
 
-@media only screen and (max-width: 865px) {
+@media only screen and (max-width: 982px) {
   .NavigationBar > img {
-    width: 5vw;
+    width: 2vw;
     margin: auto;
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  .dropup-content {
+    display: none;
+    z-index: 999;
+  }
+
+  .NavigationBar:hover .dropup-content {
+    display: block;
   }
 }
