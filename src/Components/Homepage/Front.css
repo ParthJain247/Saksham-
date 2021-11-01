@@ -1,100 +1,119 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-.Front {
-  margin: 0;
-  margin-left: 20vw;
-  height: 100vh;
-  /* width: 80vw; */
-  /* background-color: #353353; */
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  font-size: max(3vw, 30px);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    border-width: 0;
+    user-select: none;
 }
 
-.background {
-  z-index: -1;
-  position: absolute;
-  height: 100vh;
-  opacity: 0.8;
+/* some common classes for buttons */
+.btn_yellow{
+    height: 48px;
+    width: 11vw;
+    color: black;
+    font-size: 80%;
+    background-color: #F9A825;
+    box-shadow: 5px 6px rgba(0, 0, 0, 0.397);
+    border-radius: 30px;
+}
+.btn_yellow:hover{
+    background-color: #f9a825e8;
+}
+.arrow-left,
+.arrow-right{
+    height: 50px;
+    width: 50px;
+    color: black;
+    font-size: 120%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_arrow:hover{
+    background-color: rgba(0, 0, 0, 0.637);
+    color: white;
 }
 
-@media only screen and (max-width: 1000px) {
-  .Front {
-    margin-left: 0;
-    width: 100vw;
-  }
+
+
+/* section 1 having navigation bar and img container with btns */
+.front-sec{
+    background-color: #3B185F;
+    height: 111vh;
+    width: 100%;
+    display: flex;
+    font-size:calc(50% + 0.5vw);
 }
 
-.front-icon {
-  margin-top: 5vh;
-  width: 15vw;
-  min-width: 150px;
-  height: auto;
-  border-radius: 50%;
-}
+    /* img and btns container */
+    .front-sec>figure{
+        height: 90%;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.404)), url(../static/images/poverty.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: inherit;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5%;
+    }
+    .front-sec>figure>h2{
+        font-size: 290%;
+        margin-bottom: 14%;
+    }
+    .front-sec>figure>p{
+        width: 100%;
+        font-size: 220%;
+        padding-right: 5%;
+        font-weight: 900;
+    }
+    .front-sec>figure>div{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        margin: 4% 0;
+    } 
 
-.front-title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: max(4vw, 20px);
-  color: #ffffff;
-}
+    .front-readMore{
+        margin-left: 22%;
+        font-size: 110%;
+    }
 
-.connect-icons {
-  display: flex;
-  color: #fff;
-  font-size: max(2vw, 20px);
-  gap: 15px;
-}
+  
 
-.connectIcons:hover {
-  color: #ffd15c;
+@media screen and (max-width: 1000px){
+    .front-sec>figure{
+        align-items: center;
+        padding-left: 0;
+        text-align: center;
+    }
+    .front-readMore{
+        margin-left: 0;
+    }
+    .front-sec>figure>p{
+        padding: 0 5%;
+    }
+    .arrow-left,
+    .arrow-right{
+        font-size: 170%;
+        padding-bottom: 1%;
+    }
 }
-
-.front-learnMore {
-  background-image: linear-gradient(
-    to right,
-    #ffd05c 0%,
-    #cca649 51%,
-    #ffd05c 100%
-  );
-  background-size: 200% auto;
-  border-radius: 10px;
-  font-size: max(1vw, 12px);
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 15px;
-  text-transform: uppercase;
-  transition: 0.5s;
-}
-
-.front-learnMore:hover {
-  color: white;
-  background-position: right center;
-}
-
-.front-scrollDown {
-  margin-top: auto;
-  margin-bottom: 0;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  color: #ffffff;
-  font-size: max(1vw, 15px);
-}
-
-.scroll {
-  margin-top: 0;
-  font-size: max(1.5vw, 25px);
-  margin-bottom: 10px;
+@media screen and (max-width: 480px){
+    .front-sec>figure>h2{
+        font-size: 300%;
+    }
+    .front-sec>figure>p{
+        font-size: 210%;
+        font-weight: 700;
+    }
+    .btn_yellow{
+        width: 20vw;
+        font-size: 170%;
+    }
 }
