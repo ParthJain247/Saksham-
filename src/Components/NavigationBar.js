@@ -120,6 +120,10 @@ function NavigationBar() {
               <Link to="/Messages">
                 <h6 href="">Messages</h6>
               </Link>
+              <br />
+              <Link to="/Team">
+                <h6 href="">Team</h6>
+              </Link>
             </div>
           </div>
 

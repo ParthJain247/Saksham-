@@ -1,0 +1,63 @@
+.main {
+  background-color: #3b185f;
+}
+
+.black {
+  background-image: url("./static/images/team_black.png");
+
+  text-align: center;
+}
+.black h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  padding-top: 5%;
+  margin-bottom: 10%;
+}
+
+.team-flex {
+  display: flex;
+  gap: 15%;
+  margin-left: 5%;
+
+  padding-bottom: 10%;
+}
+
+.team-card {
+  background-color: rgba(249, 168, 37, 1);
+  width: 40%;
+
+  border-radius: 22%;
+}
+.team-details {
+  text-align: center;
+  padding: 5%;
+}
+.team-details h6,
+.team-details h5 {
+  color: black;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+}
+.hidden {
+  display: none;
+}
+.hidden img {
+  padding-left: 2%;
+  margin-top: 2%;
+  width: 10%;
+}
+
+.team-card:hover .hidden {
+  display: inherit;
+}
+@media only screen and (max-width: 595px) {
+  .team-flex {
+    margin-left: 15%;
+  }
+  .black h1 {
+    padding-top: 20%;
+    margin-left: 15%;
+  }
+}
