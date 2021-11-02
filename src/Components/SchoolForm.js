@@ -58,7 +58,7 @@ const SchoolForm = () => {
         console.log('Sing: ', sing)
         console.log('Other: ', other)
     }
-
+    document.body.style.background="#000000";
     return (
         <ThemeProvider theme={theme}>
             <div className="main-school-form-section">

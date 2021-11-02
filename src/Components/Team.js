@@ -6,6 +6,7 @@ import linkedin from "./static/images/linkedin.png";
 import instagram from "./static/images/instagram.png";
 import "./Team.css";
 function Team() {
+  document.body.style.background="#000000";
   return (
     <div className="main">
       <div className="black">
