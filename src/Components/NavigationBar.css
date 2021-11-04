@@ -1,6 +1,6 @@
 .NavigationBar {
   width: 20vw;
-
+  text-align: center;
   position: fixed;
   z-index: 99;
   display: flex;
@@ -19,6 +19,7 @@
 .menu {
   display: none;
 }
+
 .NavigationBar > img {
   width: 10vw;
   margin: auto;
@@ -62,10 +63,10 @@ h6,
   text-decoration: none;
 }
 
-/* .dropdown:hover h6,
+.dropdown:hover h6,
 .navbar h6:hover {
   color: rgb(172, 172, 172);
-} */
+}
 
 .dropdown:hover > .dropdown-content h6 {
   display: inline-block;
@@ -144,13 +145,4 @@ h6,
     width: 20vw;
     margin: auto;
   }
-
-  /* .dropup-content {
-    display: none;
-    z-index: 999;
-  }
-
-  .NavigationBar:hover .dropup-content {
-    display: block;
-   */
 }
