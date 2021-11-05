@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Homepage from "./Components/Homepage";
 import NavigationBar from "./Components/NavigationBar";
+import NavigationBarM from "./Components/NavigationBarM";
 import WhySakshamPage from "./Components/Why_Saksham";
 import Health from "./Components/Health";
 import CampaignsPage from "./Components/campaign";
@@ -13,7 +14,8 @@ import Form from "./Components/individual-forms/IndividualForm";
 import Gallery from "./Components/gallery";
 import Journey from "./Components/journey-components/Journey";
 import MainMessages from "./Components/Messages-components/mainMessages";
-import Happenings from './Components/Happenings'
+import Happenings from "./Components/Happenings";
+import Team from "./Components/Team";
 
 function App() {
   const text =
@@ -49,6 +51,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <NavigationBar />
+        {/* <NavigationBarM /> */}
         <Switch>
           <Route path="/WhySaksham">
             <div className="content-app">
@@ -63,6 +66,12 @@ function App() {
           <Route path="/Journey">
             <div className="content-app">
               <Journey />
+            </div>
+          </Route>
+          {/* Route to team */}
+          <Route path="/Team">
+            <div className="content-app">
+              <Team />
             </div>
           </Route>
           <Route path="/Health">
