@@ -15,26 +15,26 @@ function Front_help(){
                 <figure>
                     <img src={help1}/>
                     <h1>Neque porro quisquam </h1>
-                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
-                    <button className="btn_yellow">Donate now</button>
+                    <p>Neque porro quisquam mp essdqt qui dolore est qui dolorem ipsum quia dolor sit amet quisquam est olk</p>
+                    <a className="btn_yellow">Donate now</a>
                 </figure>
                 <figure>
                     <img src={help2}/>
                     <h1>Neque porro quisquam </h1>
-                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
-                    <button className="btn_yellow">Donate now</button>
+                    <p>Neque porro quisquam mp essdqt qui dolore est qui dolorem ipsum quia dolor sit amet quisquam est olk</p>
+                    <a className="btn_yellow">Donate now</a>
                 </figure>
                 <figure>
                     <img src={help3}/>
                     <h1>Neque porro quisquam </h1>
-                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
-                    <button className="btn_yellow">Donate now</button>
+                    <p>Neque porro quisquam mp essdqt qui dolore est qui dolorem ipsum quia dolor sit amet quisquam est olk</p>
+                    <a className="btn_yellow">Donate now</a>
                 </figure>
                 <figure>
                     <img src={help4}/>
                     <h1>Neque porro quisquam </h1>
-                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
-                    <button className="btn_yellow">Donate now</button>
+                    <p>Neque porro quisquam mp essdqt qui dolore est qui dolorem ipsum quia dolor sit amet quisquam est olk</p>
+                    <a className="btn_yellow">Donate now</a>
                 </figure>
             </article>
 

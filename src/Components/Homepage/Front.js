@@ -1,17 +1,33 @@
 import "./Front.css"
-// import Logo from "..static/images/logo.png"
+import React from 'react';
+import arra, {heads} from "./SlideshowComp"
 
-function Front(){
+
+var count = 12
+function Front(){    
+
+    const prev_slide = ()=>{
+        count--;
+        document.querySelector(".front-sec>figure").style.backgroundImage = "url("+arra[count]+")";
+        document.querySelector(".front-sec>figure>h2").style.textContent = "yareyare";
+    }
+
+    const nxt_slide = ()=>{
+        count++;
+        document.querySelector(".front-sec>figure").style.backgroundImage = "url("+arra[count]+")";
+        document.querySelector(".front-sec>figure>h2").style.textContent = heads[count];
+    }
+
     return (
-        <section class="front-sec">
+        <section className="front-sec">
         <figure>
-            <h2>"Lorean ta paksa agfj ealm"</h2>
+            <h2>Lorean ta paksa agfj ealm</h2>
             <p>yare yssdf frte jrtme hndxe yandere lli rtme hndxe yandere rtme hndxe yandere rtme hndxe yandere rtme hndxe yandere </p>
             <div>
-                <button class="arrow-left btn_arrow"> ⇐ </button>
-                <button class="arrow-right btn_arrow"> ⇒ </button>
+                <a className="arrow-left btn_arrow" onClick={prev_slide}>⇐</a>
+                <a className="arrow-right btn_arrow" onClick={nxt_slide}>⇒</a>
             </div>
-            <button class="front-readMore btn_yellow">Read More</button>
+            <a class="front-readMore btn_yellow">Read More</a>
         </figure>
     </section>
     )
