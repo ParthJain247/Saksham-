@@ -1,6 +1,4 @@
-:root{
-    font-size:calc(50% + 0.5vw);
-}
+
 .Homepage{
     margin: 0;
     display: flex;
@@ -11,11 +9,34 @@
     text-decoration: none;
     border-width: 0;
     text-align: justify;
+    background-color: #3B185F;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 982px){
     .Homepage{
         width: 100%;
         margin-left: 0;
     }
 }
+
+@media screen and (min-height: 942px) {
+    .Homepage{
+        width: 85.5%;
+        margin-left: 15.5%;
+    }
+}
+
+@media screen and (max-width: 1445px) and (min-height: 942px){
+    .Homepage{
+        width: 82%;
+        margin-left: 18%;
+    }
+}
+
+@media screen and (max-width: 980px) and (min-height: 942px){
+    .Homepage{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+

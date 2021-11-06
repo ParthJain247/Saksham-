@@ -78,7 +78,7 @@
 }
 
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1275px){
     .campaign-sec{
         height: 95vh;
     }
@@ -86,31 +86,138 @@
         font-size: 300%;
     }
     .camp_figures{
-        width: 90%
+        width: 76%
+    }
+}
+@media screen and (max-width:1020px){
+    .camp_figures{
+        height: 70%;
+    }
+}
+@media screen and (max-width:845px){
+    .camp_figures{
+        width: 80%;
+    }
+}
+@media screen and (max-width:760px){
+    .camp_figures{
+        width: 84%;
+    }
+}
+@media screen and (max-width:740px){
+    .camp_figures{
+        width: 90%;
     }
 }
 @media screen and (max-width:710px){
     .campaign-sec{
-        height: 132vh;
+        height: 140vh;
+        padding: 5% 0;
     }
     .camp_figures{
         flex-direction: column;
+        justify-content: space-around;
         align-items: center;
         height: 90%;
     }
     .camp_figures>figure{
-        height: 48%;
+        height: 45%;
         padding-top: 2%;
         width: 60%;
+        padding-bottom: 2%;
+    }
+    .campaign-sec h2{
+        font-size: 224%;
     }
 }
 @media screen and (max-width:510px){
     .camp_figures>figure{
         width: 66%;
     }
+    .campaign-sec h2{
+        font-size: 214%;
+    }
 }
 @media screen and (max-width:480px){
     .campaign-sec{
         padding-top: 4%;
+    }
+    .campaign-sec h2{
+        font-size: 180%;
+    }
+    .camp_figures>figure{
+        padding-bottom: 1%;
+    }
+}
+@media screen and (max-width:420px){
+    .camp_figures>figure{
+        width: 73%;
+    }
+}
+@media screen and (max-width:370px){
+    .camp_figures>figure{
+        width: 80%;
+    }
+}
+
+
+@media screen and (min-height: 942px) and (min-width: 350px){
+    .camp_figures{
+        width: 100%;
+    }    
+    .camp_figures>figure>button{
+        font-size: 120%;
+    }
+}
+
+@media screen and (min-height: 942px) and (min-width: 710px){
+    .campaign-sec{
+        margin-top: 16%;
+    }.camp_figures{
+        width: 90%;
+        height: 60%;
+        padding-top: 15%;
+    }
+} 
+@media screen and (min-height: 942px) and (min-width: 850px){
+    .camp_figures{
+        height: 70%;
+    }
+} 
+@media screen and (min-height: 942px) and (min-width: 1240px){
+    .campaign-sec{
+        margin-top: 10%;
+    }
+    .camp_figures{
+        width: 82%;
+        padding-top: 4%;
+    }
+} 
+@media screen and (min-height: 942px) and (min-width: 1400px){
+    .campaign-sec{
+        margin-top: 6%;
+    }
+    .campaign-sec h2{
+        font-size: 280%;
+    }
+} 
+@media screen and (min-height: 942px) and (min-width: 1550px){
+    .campaign-sec{
+        margin-top: 2%;
+    }
+    .camp_figures{
+        /* width: 90%; */
+        height: 80%;
+    }
+}
+@media screen and (min-height: 942px) and (min-width: 1680px){
+    .camp_figures{
+        height: 82%;
+        padding: 0;
+    }
+}
+@media screen and (min-height: 942px) and (min-width: 1800px){
+    .campaign-sec{
+        margin-bottom: 4%;
     }
 }

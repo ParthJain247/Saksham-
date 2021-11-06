@@ -1,6 +1,6 @@
 .NavigationBar {
   width: 20vw;
-
+  text-align: center;
   position: fixed;
   z-index: 99;
   display: flex;
@@ -14,7 +14,10 @@
   max-height: 90vh;
   max-width: 250px;
   min-width: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 2%;
+}
+.menu {
+  display: none;
 }
 
 .NavigationBar > img {
@@ -29,12 +32,13 @@
 .navbar {
   display: flex;
   flex-direction: column;
-  position: relative;
+  /* position: relative; */
 }
 
 .dropdown-content h6 {
   display: none;
 }
+
 .dropdown-content {
   position: absolute;
   top: -100%;
@@ -63,6 +67,7 @@ h6,
 .navbar h6:hover {
   color: rgb(172, 172, 172);
 }
+
 .dropdown:hover > .dropdown-content h6 {
   display: inline-block;
   margin-left: 30%;
@@ -75,19 +80,69 @@ h6,
 }
 
 @media only screen and (max-width: 982px) {
-  .NavigationBar > img {
-    width: 2vw;
-    margin: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+  .menu {
+    display: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
   }
-
-  .dropup-content {
+  .mobile-content {
     display: none;
-    z-index: 999;
+    text-align: center;
+  }
+  .NavigationBar:hover .mobile-content {
+    display: block;
   }
 
-  .NavigationBar:hover .dropup-content {
-    display: block;
+  .NavigationBar:hover > .menu {
+    opacity: 0;
+  }
+
+  .NavigationBar {
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+
+  .dropdown:hover > .dropdown-content {
+    background-color: #f9a825;
+    position: absolute;
+    display: flex;
+    padding: 14%;
+    gap: 5%;
+    width: 80vw;
+  }
+  .dropdown:hover > .dropdown-content h6 {
+    margin-left: 0%;
+    box-shadow: none;
+    color: black;
+    width: 160%;
+    font-size: 2.7vw;
+    padding: 0%;
+    background: #f9a825;
+    border-radius: 0px;
+  }
+  .dropdown-content h6:visited .dropdown-content h6 {
+    background-color: red;
+  }
+  .a {
+    top: -27vw;
+    left: 15.5vw;
+  }
+  .b {
+    top: -31vw;
+    left: 13.8vw;
+  }
+  .c {
+    top: -35vw;
+    left: 16.8vw;
+  }
+  .d {
+    top: -46.4vw;
+    left: 14.8vw;
+  }
+
+  .nav-up {
+    width: 20vw;
+    margin: auto;
   }
 }
