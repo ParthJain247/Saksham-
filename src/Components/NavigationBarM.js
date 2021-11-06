@@ -97,7 +97,15 @@ export default function App() {
         </div>
         <div className="side-bar ">
           <div id="a" className="m-dropdown-content  hidden">
-            <Link style={{ textDecoration: "none" }} to="/WhySaksham">
+            <Link
+              style={{
+                textDecoration: "none",
+                width: "35%",
+                marginTop: "-0.75%",
+                marginLeft: "2%",
+              }}
+              to="/WhySaksham"
+            >
               <h6 href="">Why Saksham</h6>
             </Link>
             <Link style={{ textDecoration: "none" }} to="/Journey">
@@ -106,7 +114,10 @@ export default function App() {
             <Link style={{ textDecoration: "none" }} to="/Messages">
               <h6 href="">Messages</h6>
             </Link>
-            <Link style={{ textDecoration: "none" }} to="/Team">
+            <Link
+              style={{ textDecoration: "none", marginTop: "0.5%" }}
+              to="/Team"
+            >
               <h6 href="">Team</h6>
             </Link>
           </div>
@@ -123,18 +134,30 @@ export default function App() {
             >
               <h6 href="">Health</h6>
             </Link>
-            <Link style={{ textDecoration: "none" }} to="/Education">
+            <Link
+              style={{ textDecoration: "none", marginTop: "-0.5%" }}
+              to="/Education"
+            >
               <h6 href="">Education</h6>
             </Link>
           </div>
           <div id="c" className="m-dropdown-content hidden ">
-            <Link style={{ textDecoration: "none" }} to="/Campaign1">
+            <Link
+              style={{ textDecoration: "none", width: "30%" }}
+              to="/Campaign1"
+            >
               <h6 href="">Campaign 1</h6>
             </Link>
-            <Link style={{ textDecoration: "none" }} to="/Campaign2">
+            <Link
+              style={{ textDecoration: "none", width: "30%" }}
+              to="/Campaign2"
+            >
               <h6 href="">Campaign 2</h6>
             </Link>
-            <Link style={{ textDecoration: "none" }} to="/Campaign3">
+            <Link
+              style={{ textDecoration: "none", width: "30%" }}
+              to="/Campaign3"
+            >
               <h6 href="">Campaign 3</h6>
             </Link>
           </div>

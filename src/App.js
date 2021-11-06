@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -47,11 +48,61 @@ function App() {
     "Just 1833 people are there per one government hospital bed",
   ];
 
+  const [mobile, setMobile] = useState(false);
+  // function WindowWidth() {
+  //   const [width, setWidth] = useState(window.innerWidth);
+
+  //   useEffect(() => {
+  //     const handleResize = () => setWidth(window.innerWidth);
+  //     window.addEventListener("resize", handleResize);
+  //     return () => {
+  //       window.removeEventListener("resize", handleResize);
+  //     };
+  //   });
+  //   return (
+  //     { <NavigationBar/>? <NavigationBar>:<NavigationBarM/>}
+  // )}
+
+  //   const [mobile,setMobile] = useState(true)
+  //   function WindowWidth() {
+  //   const [width, setWidth] = useState(window.innerWidth);
+
+  //   useEffect(() => {
+  //     const handleResize = () => setWidth(window.innerWidth);
+  //     window.addEventListener("resize", handleResize);
+  //     return () => {
+  //       window.removeEventListener("resize", handleResize);
+  //     };
+  //   });
+  //   return (
+  //     { mobile? <div>mobile</div>:<div>desktop</div>}
+  // )
+
+  // }
+  const [width, setWidth] = useState(window.innerWidth);
+
+  const onRes = () => {
+    if (width > 980) {
+      setMobile(false);
+    } else {
+      setMobile(true);
+    }
+  };
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    onRes();
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
+
   return (
     <div className="App">
       <BrowserRouter>
-        <NavigationBar />
-        {/* <NavigationBarM /> */}
+        {mobile ? <NavigationBarM /> : <NavigationBar />}
+
         <Switch>
           <Route path="/WhySaksham">
             <div className="content-app">
