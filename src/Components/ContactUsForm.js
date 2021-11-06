@@ -98,13 +98,15 @@ const ContactUsForm = () => {
                                     </div>
                                     <div className="contact-form-group">
                                         <TextareaAutosize
+                                            className="textareas"
                                             aria-label="minimum height"
                                             minRows={6}
                                             placeholder="Message"
-                                            style={{ width: '70%', backgroundColor: '#f9a826' }}
+                                            style={{ width: '70%', backgroundColor: '#f9a826', borderRadius: '20px', padding: '20px 0 0 20px' }}
                                             onChange={e => setMessage(e.target.value)}
                                         />
                                     </div>
+
                                     <Button
                                         style={{
                                             backgroundColor: '#f9a826',

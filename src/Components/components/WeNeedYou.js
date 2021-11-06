@@ -13,10 +13,9 @@ const useStyles = makeStyles((theme) => ({
     root: {
         background: "linear-gradient(45deg, #F9A826 30%, #F9A826 90%)",
         color: 'white',
-        borderRadius: "50px",
         height: "auto",
         padding: "10px 30px",
-        margin: "10px",
+        margin: "15px",
         fontSize: '25px',
     },
 

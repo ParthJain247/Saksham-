@@ -31,21 +31,26 @@
 
 .sakshampageheadertext{
     padding: 5px;
+    color: black;
 }
 
 .helpSomeoneEveryday{
     margin-top: 100px;
     padding: 10% 10%;
-    background: url('https://st3.depositphotos.com/4881653/16065/v/950/depositphotos_160659084-stock-illustration-happy-family-cartoon-vector-illustration.jpg');
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdt39lK41LUXe8Gx0TvanhgHLFN7Dj6Bsd7g&usqp=CAU');
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-    color: black;
     clip-path: polygon(0 30%, 32% 0, 100% 0, 100% 100%, 29% 100%, 0 70%);
+}
+
+.help-someone-everyday{
+    color: black;
 }
 
 .helpSomeoneEverydaySection{
     align-items: center;
+    color: black;
 }
 
 .helpSomeoneEverydaySection > img{
@@ -56,6 +61,8 @@
 
 .helpSomeoneEverydaySection > p{
     padding: 5%;
+    color: black;
+    font-size: 30px;
 }
 
 /* .helpSomeoneEveryday > img{
