@@ -11,12 +11,16 @@
 /* some common classes for buttons */
 .btn_yellow{
     height: 48px;
-    width: 11vw;
+    width: 160px;
     color: black;
-    font-size: 80%;
+    font-size: 20px;
     background-color: #F9A825;
     box-shadow: 5px 6px rgba(0, 0, 0, 0.397);
-    border-radius: 30px;
+    border-radius: 30px;    
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn_yellow:hover{
     background-color: #f9a825e8;
@@ -26,9 +30,11 @@
     height: 50px;
     width: 50px;
     color: black;
-    font-size: 120%;
+    font-size: 30px;
     background-color: rgb(255, 255, 255);
-    border-radius: 28px;
+    border-radius: 25px;
+    padding-bottom: 3px;
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,17 +49,16 @@
 /* section 1 having navigation bar and img container with btns */
 .front-sec{
     background-color: #3B185F;
-    height: 111vh;
+    height: 105vh;
     width: 100%;
     display: flex;
-    font-size:calc(50% + 0.5vw);
 }
 
     /* img and btns container */
     .front-sec>figure{
-        height: 90%;
+        height: 100vh;
         width: 100%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.404)), url(../static/images/poverty.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.404)), url(../static/images/poverty1.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -63,14 +68,14 @@
         padding-left: 5%;
     }
     .front-sec>figure>h2{
-        font-size: 290%;
+        font-size: 52px;
         margin-bottom: 14%;
     }
     .front-sec>figure>p{
         width: 100%;
-        font-size: 220%;
+        font-size: 30px;
         padding-right: 5%;
-        font-weight: 900;
+        font-weight: 700;
     }
     .front-sec>figure>div{
         width: 60%;
@@ -81,39 +86,121 @@
 
     .front-readMore{
         margin-left: 22%;
-        font-size: 110%;
     }
 
   
 
-@media screen and (max-width: 1000px){
+
+@media screen and (min-height: 942px) {
+    .btn_yellow{
+        height: 58px;
+        width: 184px;
+    } 
+    .front-sec{
+        height: 100vh;
+    }
+    .front-readMore{
+        margin-left: -5%;
+        align-self: center;
+        font-size: 22px;
+    }
+    .front-sec>figure>div{
+        width: 95%;
+    }  
+    .arrow-left,
+    .arrow-right{
+        height: 70px;
+        width: 70px;
+        border-radius: 50px;
+        font-size: 35px;
+    }
+}
+
+
+
+@media screen and (max-width: 982px){
     .front-sec>figure{
         align-items: center;
-        padding-left: 0;
+        padding-left: 2%;
+        padding-top: 100px;
         text-align: center;
+    }
+    .front-sec>figure>h2{
+        font-size: 44px;
+    }
+    .front-sec>figure>p{
+        padding: 0 5%;
+        font-size: 25px;
+    } 
+    .btn_yellow{
+        font-size: 16px;
     }
     .front-readMore{
         margin-left: 0;
     }
+}
+@media screen and (min-height: 942px) and (max-width:980px){
+    .front-readMore{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 610px){
+    .front-sec>figure>h2{
+        font-size: 38px;
+    }
     .front-sec>figure>p{
         padding: 0 5%;
-    }
+        font-size: 21px;
+        font-weight: 600;
+    } 
+    .btn_yellow{
+        font-size: 16px;
+    }   
     .arrow-left,
     .arrow-right{
-        font-size: 170%;
-        padding-bottom: 1%;
+        font-size: 26px;
+    }
+}
+@media screen and (min-height: 942px) and (max-width:610px){
+    .front-readMore{
+        font-size: 20px;
     }
 }
 @media screen and (max-width: 480px){
     .front-sec>figure>h2{
-        font-size: 300%;
-    }
+        font-size: 35px;
+    }    
     .front-sec>figure>p{
-        font-size: 210%;
-        font-weight: 700;
-    }
+        font-size: 19px;
+    } 
     .btn_yellow{
-        width: 20vw;
-        font-size: 170%;
+        width: 125px;
+        height: 42px;
     }
 }
+@media screen and (min-height: 942px) and (max-width:480px){
+    .front-readMore{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 350px){
+    .front-sec>figure>h2{
+        font-size: 32px;
+    }    
+    .front-sec>figure>p{
+        font-size: 16px;
+    } 
+    .btn_yellow{
+        width: 116px;
+        height: 41px;
+    }
+    .front-readMore{
+        margin-top: 8%;
+    }
+}
+
+
+
+
+
+
