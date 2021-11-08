@@ -1,42 +1,12 @@
-
-.Homepage{
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-left: 20%;
-    box-sizing: border-box;
-    text-decoration: none;
-    border-width: 0;
-    text-align: justify;
-    background-color: #3B185F;
+.Homepage {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-width: 0;
+  text-align: justify;
+  background-color: #3b185f;
 }
-
-@media screen and (max-width: 982px){
-    .Homepage{
-        width: 100%;
-        margin-left: 0;
-    }
-}
-
-@media screen and (min-height: 942px) {
-    .Homepage{
-        width: 85.5%;
-        margin-left: 15.5%;
-    }
-}
-
-@media screen and (max-width: 1445px) and (min-height: 942px){
-    .Homepage{
-        width: 82%;
-        margin-left: 18%;
-    }
-}
-
-@media screen and (max-width: 980px) and (min-height: 942px){
-    .Homepage{
-        width: 100%;
-        margin-left: 0;
-    }
-}
-

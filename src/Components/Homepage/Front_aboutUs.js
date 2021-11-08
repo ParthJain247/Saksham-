@@ -5,6 +5,7 @@ function Front_aboutUs(){
         <>
             <section className="aboutUs-sec">
                 <article className="cont">
+                    <div className="aboutUs-sec-cont">
                         <div className="shape_cont">
                             <h1>Neque porro quisquam est </h1>
                             <h2>Nipsum quia dolor sit amet</h2>
@@ -17,6 +18,7 @@ function Front_aboutUs(){
                             <a>Donate now</a>
                             <a>Donate now</a>
                         </div>
+                    </div>
                 </article>
             </section>
         </>
