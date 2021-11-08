@@ -223,7 +223,7 @@
   }
 
   .journey-timeline .journey-content-main {
-    width: 80%;
+    width: 100%;
   }
   .vertical-timeline-element-content {
     border-radius: 83px !important;
@@ -252,6 +252,14 @@
   }
 
   .journey-icon {
-    background: #f9a826;
+    background: #000;
+  }
+  .vertical-timeline-element-content {
+    background-color: #f9a826 !important;
+  }
+  .date,
+  .journey-content .text-content .vertical-timeline-element-title,
+  .journey-content #description {
+    color: #000 !important;
   }
 }
