@@ -14,7 +14,7 @@ function Homepage(){
            <Front_help/>
            <Front_aboutUs/>
            <Front_ethics/>
-           <Front_campaign/>
+           {/* <Front_campaign/> */}
            <Front_footer/>
         </div>
         </>
