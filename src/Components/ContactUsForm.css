@@ -71,3 +71,12 @@
         margin-left: 20%;
     }
   }
+
+@media screen and (min-width: 1001px){
+  .contact-us-form{
+      margin-left: -20em
+  }
+  .contact-us-para{
+      margin-left: 15%;
+  }
+}
