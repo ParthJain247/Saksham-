@@ -50,8 +50,7 @@
   top: 0;
   right: 0;
   width: 79vw;
-
-  gap: 5%;
+  gap: 3%;
   height: 10vw;
   background-color: rgba(249, 168, 37, 1);
 }
@@ -59,18 +58,20 @@
   color: black;
   font-size: 3vw;
 
+  margin-top: 2vw;
   padding: 5%;
 }
 .hidden {
   display: none;
 }
+
 .menuu {
   display: inherit;
   z-index: 9999999999999999;
   width: 5vw;
   position: fixed;
-  top: 0;
-  left: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (max-width: 505px) {
