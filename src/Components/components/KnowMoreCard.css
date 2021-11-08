@@ -1,6 +1,6 @@
 .individual-card{
     border: 1px solid white;
-    background-color: #ffd05c;
+    background-color: rgba(42, 9, 68, 1);
     margin: 12% 5% 0;
     padding: 30px;
     border-radius: 10px;
@@ -15,7 +15,7 @@
 
 .individual-card:hover{
     color: white;
-    background-color: #2a0944;
+    background-color: black;
 }
 
 .know-more-card-content{
