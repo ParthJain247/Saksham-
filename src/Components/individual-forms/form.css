@@ -1,7 +1,6 @@
 .individual-form-page {
   background: #2a0944;
   height: fit-content;
-
   overflow-x: hidden;
 }
 
@@ -73,11 +72,12 @@
 .follow-slide-in {
   animation: sub-slide-in 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
-
-.individual-slide-out,
 .food-slide-out,
 .edu-slide-out,
 .follow-slide-out {
+  animation: sub-slide-out 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.individual-slide-out {
   animation: slide-out 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
@@ -102,8 +102,8 @@
   }
   100% {
     opacity: 1;
-    transform: translateX(15em);
-    transform-origin: translateX(15em);
+    transform: translateX(10em);
+    transform-origin: translateX(10em);
   }
 }
 
@@ -114,21 +114,32 @@
   }
   100% {
     opacity: 1;
-    transform: translateX(24em);
-    transform-origin: translateX(24em);
+    transform: translateX(0em);
+    transform-origin: translateX(0em);
   }
 }
-
-@keyframes slide-out {
+@keyframes sub-slide-out {
   0% {
     opacity: 1;
-    transform: translateX(12em);
-    transform-origin: translateX(12em);
+    transform: translateX(0em);
+    transform-origin: translateX(0em);
   }
   100% {
     opacity: 0.5;
-    transform: translateX(0) scale(0);
-    transform-origin: translateX(0);
+    transform: scale(0);
+    transition: transform 0.5s;
+  }
+}
+@keyframes slide-out {
+  0% {
+    opacity: 1;
+    transform: translateX(10em);
+    transform-origin: translateX(10em);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(0);
+    transition: transform 0.5s;
   }
 }
 
@@ -144,7 +155,7 @@
 }
 
 .individual-form .donation-form-button {
-  margin-left: 9em;
+  margin-left: 25%;
   width: 22em;
   font-weight: 700;
 }
@@ -175,7 +186,7 @@
   height: 3em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
   @keyframes sub-slide-in {
     0% {
       opacity: 0;
@@ -184,8 +195,8 @@
     }
     100% {
       opacity: 1;
-      transform: translate(3em, 3em);
-      transform-origin: translate(3em, 3em);
+      transform: translate(10em, 3em);
+      transform-origin: translate(10em, 3em);
     }
   }
   @keyframes slide-in {
@@ -196,23 +207,38 @@
     }
     100% {
       opacity: 1;
-      transform: translate(-3em, 3em);
-      transform-origin: translate(-3em, 3em);
+      transform: translate(20em, 3em);
+      transform-origin: translate(20em, 3em);
     }
   }
   @keyframes slide-out {
     0% {
       opacity: 1;
-      transform: translate(-3m, 3em);
-      transform-origin: translate(-3em, 3em);
+      transform: translate(20em, 3em);
+      transform-origin: translate(20em, 3em);
     }
     100% {
       opacity: 0;
-      transform: scale(0) translate(-3em, 0em);
-      transform-origin: translate(-3em, 0em);
+      transform: scale(0) translate(20em, 0em);
+      transform-origin: translate(20em, 0em);
+    }
+  }
+  @keyframes sub-slide-out {
+    0% {
+      opacity: 1;
+      transform: translate(10em, 3em);
+      transform-origin: translate(10em, 3em);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0);
+      transition: transform 0.5s;
     }
   }
 
+  .individual-form .form {
+    margin-left: 20%;
+  }
   .individual-form h1 {
     margin-left: 33%;
   }
@@ -225,24 +251,26 @@
   }
 
   .form .basicInput .basicInputControl {
-    width: 115%;
+    width: 95%;
   }
 
   .form .basicInput {
     padding-left: 0;
-    margin-left: -3em;
+    margin-left: 0;
   }
 
-  .individual-form .donation-form-button {
-    margin-left: 0em;
-    width: 100%;
+  .individual-form .form .donation-form-button {
+    margin-left: 10%;
+    width: 10rem;
+    margin-top: 83%;
   }
 
-  .donationRow .individual-collection-button {
-    width: 20rem;
+  .donationRow .main-donations .individual-collection-button {
+    width: 10rem;
+    overflow-wrap: break-word;
     height: 6rem;
     padding: 0.5rem;
-    margin-left: 0em;
+    margin-left: 25%;
   }
 
   .individual-form-page .individual-intro {
@@ -258,8 +286,15 @@
   }
 
   .donationLinks .donation-list {
-    margin-top: -4em;
-    margin-left: 60%;
+    margin-top: 40%;
+    position: absolute;
+    margin-left: 5%;
+    z-index: 0;
+  }
+
+  .donationRow .main-donations {
+    margin-left: -55%;
+    z-index: 1;
   }
 }
 @media screen and (min-width: 600px) {
@@ -285,7 +320,7 @@
 
   .individual-form .donation-form-button {
     margin-top: -5em;
-    margin-left: 25%;
+    margin-left: 35%;
   }
   .form .donationFields {
     width: 20em;
@@ -293,7 +328,7 @@
   .donationRow .food-submenu,
   .donationRow .edu-submenu,
   .donationRow .follow-submenu {
-    width: 10em;
+    width: 10rem;
   }
   .form h3 {
     margin-left: 0em;
@@ -303,10 +338,14 @@
     margin-top: 2%;
   }
   .donationRow .main-donations .individual-donation-button {
-    width: 10em;
+    width: 10rem;
   }
   .donationRow .main-donations {
-    margin-left: 10%;
+    margin-left: 30%;
+  }
+  .donationLinks .main-donations .individual-collection-button {
+    width: 10rem;
+    overflow-wrap: break-word;
   }
 }
 @media screen and (min-width: 768px) {
@@ -319,7 +358,7 @@
   }
   .individual-form .donation-form-button {
     margin-top: -5em;
-    margin-left: 15em;
+    margin-left: 40%;
   }
   .form .donationFields {
     width: 20em;
@@ -339,6 +378,12 @@
 
   .individual-form .form .donation-form-button {
     margin-top: 2%;
+  }
+  .donationLinks .main-donations {
+    margin-left: 5%;
+  }
+  .donationLinks .main-donations .individual-collection-button {
+    width: 15em;
   }
 }
 @media screen and (min-width: 980px) {
@@ -364,7 +409,7 @@
   }
   .individual-form .donation-form-button {
     margin-top: 0em;
-    margin-left: 15em;
+    margin-left: 50%;
   }
   .form .donationFields {
     width: 20em;
@@ -379,6 +424,9 @@
     margin-left: 5%;
   }
 
+  .individual-form .donationLinks {
+    margin-left: 30%;
+  }
   .donationRow .main-donations .individual-donation-button {
     width: 10em;
   }
@@ -406,7 +454,7 @@
   }
   .individual-form .donation-form-button {
     margin-top: 0em;
-    margin-left: 15em;
+    margin-left: 25%;
   }
   .form .donationFields {
     width: 20em;
@@ -436,6 +484,9 @@
   .individual-form-page {
     margin-left: -23em;
   }
+  .individual-form .form .donation-form-button {
+    margin-left: 20%;
+  }
 }
 @media screen and (min-width: 2210px) {
   .individual-form-page {
@@ -446,10 +497,66 @@
   .individual-form-page {
     margin-left: -28em;
   }
+  .donationLinks .main-donations {
+    margin-left: 20%;
+  }
+  .individual-form .form .donation-form-button {
+    margin-left: 35%;
+  }
+  .donationLinks .main-donations .individual-collection-button {
+    width: 30rem;
+  }
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(10em, 5em);
+      transform-origin: translate(10em, 5em);
+    }
+  }
+
+  @keyframes sub-slide-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0em, 5em);
+      transform-origin: translateX(0em, 5em);
+    }
+  }
+  @keyframes sub-slide-out {
+    0% {
+      opacity: 1;
+      transform: translate(0em, 5em);
+      transform-origin: translate(0em, 5em);
+    }
+    100% {
+      opacity: 0.5;
+      transform: scale(0);
+      transition: transform 0.5s;
+    }
+  }
+  @keyframes slide-out {
+    0% {
+      opacity: 1;
+      transform: translate(10em, 5em);
+      transform-origin: translate(10em, 5em);
+    }
+    100% {
+      opacity: 0.5;
+      transform: scale(0);
+      transition: transform 0.5s;
+    }
+  }
 }
 @media screen and (max-width: 360px) {
   .individual-form h1 {
-    padding-left: 2em;
+    padding-left: 0em;
   }
   .form .basicInput {
     padding-left: 0em;
@@ -457,10 +564,139 @@
   }
 
   .form .donationLinks {
-    margin-left: -2em;
+    margin-left: 0em;
   }
-
+  .individual-form .donation-form-button {
+    margin-top: 70%;
+  }
   .donationLinks .donation-list {
-    margin-top: 0;
+    margin-top: 40%;
+    margin-left: -3em;
+  }
+}
+@media screen and (max-width: 400px) {
+  @keyframes sub-slide-in {
+    0% {
+      opacity: 0;
+      transform: translateY(0em);
+      transition: transform 0.5s;
+    }
+    100% {
+      opacity: 1;
+      transform: translate(5em, 3em);
+      transform-origin: translate(5em, 3em);
+    }
+  }
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateY(0em);
+      transition: transform 0.5s;
+    }
+    100% {
+      opacity: 1;
+      transform: translate(15em, 3em);
+      transform-origin: translate(15em, 3em);
+    }
+  }
+  @keyframes slide-out {
+    0% {
+      opacity: 1;
+      transform: translate(15em, 3em);
+      transform-origin: translate(15em, 3em);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0);
+      transition: transform 0.5s;
+    }
+  }
+  @keyframes sub-slide-out {
+    0% {
+      opacity: 1;
+      transform: translate(5em, 3em);
+      transform-origin: translate(5em, 3em);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0);
+      transition: transform 0.5s;
+    }
+  }
+  .main-donations .individual-donation-button {
+    font-size: 10px;
+    width: 10em;
+  }
+  .main-donations .edu-donation {
+    padding-left: 2em;
+  }
+  .donationRow .food-submenu,
+  .donationRow .edu-submenu,
+  .donationRow .follow-submenu {
+    font-size: 10px;
+    width: 10em;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 475px) {
+  @keyframes sub-slide-in {
+    0% {
+      opacity: 0;
+      transform: translateY(0em);
+      transition: transform 0.5s;
+    }
+    100% {
+      opacity: 1;
+      transform: translate(10em, 5em);
+      transform-origin: translate(10em, 5em);
+    }
+  }
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateY(0em);
+      transition: transform 0.5s;
+    }
+    100% {
+      opacity: 1;
+      transform: translate(20em, 3em);
+      transform-origin: translate(20em, 3em);
+    }
+  }
+  @keyframes slide-out {
+    0% {
+      opacity: 1;
+      transform: translate(25em, 3em);
+      transform-origin: translate(25em, 3em);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0);
+      transition: transform 0.5s;
+    }
+  }
+  @keyframes sub-slide-out {
+    0% {
+      opacity: 1;
+      transform: translate(1-em, 5em);
+      transform-origin: translate(10em, 5em);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0);
+      transition: transform 0.5s;
+    }
+  }
+  .main-donations .individual-donation-button {
+    font-size: 13px;
+    width: 10em;
+  }
+  .main-donations .edu-donation {
+    padding-left: 2em;
+  }
+  .donationRow .food-submenu,
+  .donationRow .edu-submenu,
+  .donationRow .follow-submenu {
+    font-size: 13px;
+    width: 10em;
   }
 }
