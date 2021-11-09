@@ -261,7 +261,7 @@
 
   .individual-form .form .donation-form-button {
     margin-left: 10%;
-    width: 10rem;
+    width: 15rem;
     margin-top: 83%;
   }
 
@@ -380,7 +380,7 @@
     margin-top: 2%;
   }
   .donationLinks .main-donations {
-    margin-left: 5%;
+    margin-left: 15%;
   }
   .donationLinks .main-donations .individual-collection-button {
     width: 15em;
@@ -435,6 +435,9 @@
   .individual-form-page {
     margin-left: -20em;
   }
+  .individual-form .form .donation-form-button {
+    margin-left: 50%;
+  }
 }
 @media screen and (min-width: 1460px) {
   .individual-form-page {
@@ -452,9 +455,9 @@
   .form .donationLinks {
     margin-left: 10em;
   }
-  .individual-form .donation-form-button {
+  .individual-form .form .donation-form-button {
     margin-top: 0em;
-    margin-left: 25%;
+    margin-left: 30%;
   }
   .form .donationFields {
     width: 20em;
@@ -485,17 +488,23 @@
     margin-left: -23em;
   }
   .individual-form .form .donation-form-button {
-    margin-left: 20%;
+    margin-left: 30%;
   }
 }
 @media screen and (min-width: 2210px) {
   .individual-form-page {
     margin-left: -24em;
   }
+  .individual-form .form .donation-form-button {
+    margin-left: 25%;
+  }
 }
 @media screen and (min-width: 2454px) {
   .individual-form-page {
     margin-left: -28em;
+  }
+  .individual-form .form .basicInputControl {
+    width: 30%;
   }
   .donationLinks .main-donations {
     margin-left: 20%;
@@ -552,26 +561,6 @@
       transform: scale(0);
       transition: transform 0.5s;
     }
-  }
-}
-@media screen and (max-width: 360px) {
-  .individual-form h1 {
-    padding-left: 0em;
-  }
-  .form .basicInput {
-    padding-left: 0em;
-    margin-left: 0em;
-  }
-
-  .form .donationLinks {
-    margin-left: 0em;
-  }
-  .individual-form .donation-form-button {
-    margin-top: 70%;
-  }
-  .donationLinks .donation-list {
-    margin-top: 40%;
-    margin-left: -3em;
   }
 }
 @media screen and (max-width: 400px) {
@@ -698,5 +687,26 @@
   .donationRow .follow-submenu {
     font-size: 13px;
     width: 10em;
+  }
+}
+@media screen and (max-width: 360px) {
+  .individual-form h1 {
+    padding-left: 0em;
+  }
+  .form .basicInput {
+    padding-left: 0em;
+    margin-left: 0em;
+  }
+
+  .form .donationLinks {
+    margin-left: 0em;
+  }
+  .individual-form .form .donation-form-button {
+    margin-top: 95%;
+    width: 12rem;
+  }
+  .donationLinks .donation-list {
+    margin-top: 40%;
+    margin-left: -3em;
   }
 }
