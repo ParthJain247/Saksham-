@@ -127,6 +127,7 @@
   padding-top: 8%;
   padding-left: 15%;
   font-family: "Montserrat";
+  font-size: 5vw;
   font-weight: 600;
 }
 .explaination {
@@ -138,10 +139,12 @@
 .explaination h2 {
   font-weight: bold;
   margin-bottom: 8%;
+  font-size: 4vw;
 }
 
-/* .explaination p {
-} */
+.explaination p {
+  font-size: 2vw;
+}
 
 .info {
   font-family: "Montserrat";
@@ -160,13 +163,13 @@
   margin-left: 40%;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 200;
 }
 .ip-donate {
   background: #f9a826;
   border-radius: 50px;
   width: 40%;
-  margin-left: 35%;
+  margin-left: 20%;
   padding: 2% 0;
 }
 .holder {
@@ -323,5 +326,18 @@ figcaption {
 @media screen and (max-width: 960px) {
   .banner h1 {
     padding-top: 30%;
+    padding-left: 25%;
+  }
+  .explaination div {
+    padding-left: 20%;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .banner h1 {
+    padding-left: 40%;
+  }
+  .explaination div {
+    padding-left: 35%;
   }
 } ;

@@ -49,16 +49,17 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 79vw;
+  width: 80vw;
   gap: 3%;
-  height: 10vw;
+
+  height: 14vw;
   background-color: rgba(249, 168, 37, 1);
 }
 .m-dropdown-content h6 {
   color: black;
   font-size: 3vw;
 
-  margin-top: 2vw;
+  margin-top: 4vw;
   padding: 5%;
 }
 .hidden {
@@ -68,12 +69,20 @@
 .menuu {
   display: inherit;
   z-index: 9999999999999999;
-  width: 5vw;
+  width: 15vw;
   position: fixed;
-  margin-left: auto;
-  margin-right: auto;
 }
+.menuuu {
+  position: fixed;
+  width: 6vw;
+  z-index: 9999999999999999;
+}
+.change {
+  background-color: rgb(200, 133, 25);
+  display: inline-block;
 
+  border-bottom: 2px solid black;
+}
 @media only screen and (max-width: 505px) {
   .m-dropdown-content {
     width: 75vw;

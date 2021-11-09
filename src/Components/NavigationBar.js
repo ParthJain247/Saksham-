@@ -19,7 +19,13 @@ function NavigationBar() {
   function onClick(e, item) {
     history.push("/" + item.name);
   }
-
+  function onNavClick(e) {
+    const targets = document.querySelectorAll(".test");
+    for (let i = 0; i < 8; i++) {
+      targets[i].classList.remove("color");
+    }
+    e.target.classList.add("color");
+  }
   const items = [
     {
       name: "",
@@ -107,11 +113,15 @@ function NavigationBar() {
         <div className="dropup-content">
           <div class="navbar">
             <Link style={{ textDecoration: "none" }} to="/">
-              <h6>Home</h6>
+              <h6 className="test" onClick={onNavClick}>
+                Home
+              </h6>
             </Link>
             <div class="dropdown">
               <Link style={{ textDecoration: "none" }} to="/WhySaksham">
-                <h6 href="">About Us</h6>
+                <h6 className="test" onClick={onNavClick} href="">
+                  About Us
+                </h6>
               </Link>
               <div class="dropdown-content a">
                 <Link to="/WhySaksham">
@@ -136,7 +146,9 @@ function NavigationBar() {
 
             <div class="dropdown">
               <Link style={{ textDecoration: "none" }} to="/Hunger">
-                <h6 href="">Works</h6>
+                <h6 className="test" onClick={onNavClick} href="">
+                  Works
+                </h6>
               </Link>
               <div class="dropdown-content b">
                 <Link to="/Hunger">
@@ -161,7 +173,9 @@ function NavigationBar() {
             </div>
             <div class="dropdown">
               <Link style={{ textDecoration: "none" }} to="/Campaign1">
-                <h6 href="">Campaigns</h6>
+                <h6 className="test" onClick={onNavClick} href="">
+                  Campaigns
+                </h6>
               </Link>
               <div class="dropdown-content c">
                 <Link to="/Campaign1">
@@ -178,14 +192,20 @@ function NavigationBar() {
               </div>
             </div>
             <Link style={{ textDecoration: "none" }} to="/Happenings">
-              <h6 href="">Happenings</h6>
+              <h6 className="test" onClick={onNavClick} href="">
+                Happenings
+              </h6>
             </Link>
             <Link style={{ textDecoration: "none" }} to="/Gallary">
-              <h6 href="">Gallery</h6>
+              <h6 className="test" onClick={onNavClick} href="">
+                Gallery
+              </h6>
             </Link>
             <div class="dropdown">
               <Link style={{ textDecoration: "none" }} to="/Individual">
-                <h6 href="">Join Up</h6>
+                <h6 className="test" onClick={onNavClick} href="">
+                  Join Up
+                </h6>
               </Link>
               <div class="dropdown-content d">
                 <Link to="/Individual">
@@ -202,7 +222,9 @@ function NavigationBar() {
               </div>
             </div>
             <Link style={{ textDecoration: "none" }} to="/Contact">
-              <h6 href="">Contact Us</h6>
+              <h6 className="test" onClick={onNavClick} href="">
+                Contact Us
+              </h6>
             </Link>
           </div>
         </div>
