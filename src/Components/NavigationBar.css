@@ -1,3 +1,6 @@
+.color {
+  border-bottom: 2px solid rgb(172, 172, 172);
+}
 .NavigationBar {
   width: 20vw;
   text-align: center;
@@ -16,6 +19,7 @@
   min-width: 100px;
   padding-bottom: 2%;
 }
+
 .menu {
   display: none;
 }
@@ -79,6 +83,7 @@ h6,
   border-radius: 100px;
 }
 
+/* 
 @media only screen and (max-width: 982px) {
   .menu {
     display: inherit;
@@ -145,4 +150,4 @@ h6,
     width: 20vw;
     margin: auto;
   }
-}
+} */
